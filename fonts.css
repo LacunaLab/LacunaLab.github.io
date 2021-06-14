@@ -1,0 +1,1443 @@
+
+/*=====================================
+[1-1] b-a-s-i-s-g-r-o-s_1
+=====================================*/
+
+@font-face {
+	font-family: 'b-a-s-i-s-g-r-o-s_1';
+	src: url('/fonts/b-a-s-i-s-g-r-o-s_1.ttf');
+}
+.font-1-1 {
+	font-family: b-a-s-i-s-g-r-o-s_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[1-2] b-a-s-i-s-g-r-o-s_2
+=====================================*/
+
+@font-face {
+	font-family: 'b-a-s-i-s-g-r-o-s_2';
+	src: url('/fonts/b-a-s-i-s-g-r-o-s_2.ttf');
+}
+.font-1-2 {
+	font-family: b-a-s-i-s-g-r-o-s_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[1-3] b-a-s-i-s-g-r-o-s_3
+=====================================*/
+
+@font-face {
+	font-family: 'b-a-s-i-s-g-r-o-s_3';
+	src: url('/fonts/b-a-s-i-s-g-r-o-s_3.ttf');
+}
+.font-1-3 {
+	font-family: b-a-s-i-s-g-r-o-s_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-1] c-i-r-c-u-l-a-r_1
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_1';
+	src: url('/fonts/c-i-r-c-u-l-a-r_1.ttf');
+}
+.font-2-1 {
+	font-family: c-i-r-c-u-l-a-r_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-2] c-i-r-c-u-l-a-r_2
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_2';
+	src: url('/fonts/c-i-r-c-u-l-a-r_2.ttf');
+}
+.font-2-2 {
+	font-family: c-i-r-c-u-l-a-r_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-3] c-i-r-c-u-l-a-r_3
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_3';
+	src: url('/fonts/c-i-r-c-u-l-a-r_3.ttf');
+}
+.font-2-3 {
+	font-family: c-i-r-c-u-l-a-r_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-4] c-i-r-c-u-l-a-r_4
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_4';
+	src: url('/fonts/c-i-r-c-u-l-a-r_4.ttf');
+}
+.font-2-4 {
+	font-family: c-i-r-c-u-l-a-r_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-5] c-i-r-c-u-l-a-r_5
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_5';
+	src: url('/fonts/c-i-r-c-u-l-a-r_5.ttf');
+}
+.font-2-5 {
+	font-family: c-i-r-c-u-l-a-r_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-6] c-i-r-c-u-l-a-r_6
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_6';
+	src: url('/fonts/c-i-r-c-u-l-a-r_6.ttf');
+}
+.font-2-6 {
+	font-family: c-i-r-c-u-l-a-r_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-7] c-i-r-c-u-l-a-r_7
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_7';
+	src: url('/fonts/c-i-r-c-u-l-a-r_7.ttf');
+}
+.font-2-7 {
+	font-family: c-i-r-c-u-l-a-r_7!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-8] c-i-r-c-u-l-a-r_8
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_8';
+	src: url('/fonts/c-i-r-c-u-l-a-r_8.ttf');
+}
+.font-2-8 {
+	font-family: c-i-r-c-u-l-a-r_8!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-9] c-i-r-c-u-l-a-r_9
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_9';
+	src: url('/fonts/c-i-r-c-u-l-a-r_9.ttf');
+}
+.font-2-9 {
+	font-family: c-i-r-c-u-l-a-r_9!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[2-10] c-i-r-c-u-l-a-r_10
+=====================================*/
+
+@font-face {
+	font-family: 'c-i-r-c-u-l-a-r_10';
+	src: url('/fonts/c-i-r-c-u-l-a-r_10.ttf');
+}
+.font-2-10 {
+	font-family: c-i-r-c-u-l-a-r_10!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[3-1] d-e-m_1
+=====================================*/
+
+@font-face {
+	font-family: 'd-e-m_1';
+	src: url('/fonts/d-e-m_1.ttf');
+}
+.font-3-1 {
+	font-family: d-e-m_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[3-2] d-e-m_2
+=====================================*/
+
+@font-face {
+	font-family: 'd-e-m_2';
+	src: url('/fonts/d-e-m_2.ttf');
+}
+.font-3-2 {
+	font-family: d-e-m_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-1] d-i-n_1
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_1';
+	src: url('/fonts/d-i-n_1.ttf');
+}
+.font-4-1 {
+	font-family: d-i-n_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-2] d-i-n_2
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_2';
+	src: url('/fonts/d-i-n_2.ttf');
+}
+.font-4-2 {
+	font-family: d-i-n_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-3] d-i-n_3
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_3';
+	src: url('/fonts/d-i-n_3.ttf');
+}
+.font-4-3 {
+	font-family: d-i-n_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-4] d-i-n_4
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_4';
+	src: url('/fonts/d-i-n_4.ttf');
+}
+.font-4-4 {
+	font-family: d-i-n_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-5] d-i-n_5
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_5';
+	src: url('/fonts/d-i-n_5.ttf');
+}
+.font-4-5 {
+	font-family: d-i-n_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-6] d-i-n_6
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_6';
+	src: url('/fonts/d-i-n_6.ttf');
+}
+.font-4-6 {
+	font-family: d-i-n_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-7] d-i-n_7
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_7';
+	src: url('/fonts/d-i-n_7.ttf');
+}
+.font-4-7 {
+	font-family: d-i-n_7!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-8] d-i-n_8
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_8';
+	src: url('/fonts/d-i-n_8.ttf');
+}
+.font-4-8 {
+	font-family: d-i-n_8!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-9] d-i-n_9
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_9';
+	src: url('/fonts/d-i-n_9.ttf');
+}
+.font-4-9 {
+	font-family: d-i-n_9!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-10] d-i-n_10
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_10';
+	src: url('/fonts/d-i-n_10.ttf');
+}
+.font-4-10 {
+	font-family: d-i-n_10!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-11] d-i-n_11
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_11';
+	src: url('/fonts/d-i-n_11.ttf');
+}
+.font-4-11 {
+	font-family: d-i-n_11!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[4-12] d-i-n_12
+=====================================*/
+
+@font-face {
+	font-family: 'd-i-n_12';
+	src: url('/fonts/d-i-n_12.ttf');
+}
+.font-4-12 {
+	font-family: d-i-n_12!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[5-1] e-l-i-s-t-a_1
+=====================================*/
+
+@font-face {
+	font-family: 'e-l-i-s-t-a_1';
+	src: url('/fonts/e-l-i-s-t-a_1.ttf');
+}
+.font-5-1 {
+	font-family: e-l-i-s-t-a_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[6-1] f-a-b-r-i-k_1
+=====================================*/
+
+@font-face {
+	font-family: 'f-a-b-r-i-k_1';
+	src: url('/fonts/f-a-b-r-i-k_1.otf');
+}
+.font-6-1 {
+	font-family: f-a-b-r-i-k_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[6-2] f-a-b-r-i-k_2
+=====================================*/
+
+@font-face {
+	font-family: 'f-a-b-r-i-k_2';
+	src: url('/fonts/f-a-b-r-i-k_2.otf');
+}
+.font-6-2 {
+	font-family: f-a-b-r-i-k_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[7-1] m-a-c-k_1
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-c-k_1';
+	src: url('/fonts/m-a-c-k_1.ttf');
+}
+.font-7-1 {
+	font-family: m-a-c-k_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[7-2] m-a-c-k_2
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-c-k_2';
+	src: url('/fonts/m-a-c-k_2.ttf');
+}
+.font-7-2 {
+	font-family: m-a-c-k_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[7-3] m-a-c-k_3
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-c-k_3';
+	src: url('/fonts/m-a-c-k_3.ttf');
+}
+.font-7-3 {
+	font-family: m-a-c-k_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[8-1] m-a-s-u-r-i-a_1
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-s-u-r-i-a_1';
+	src: url('/fonts/m-a-s-u-r-i-a_1.ttf');
+}
+.font-8-1 {
+	font-family: m-a-s-u-r-i-a_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[8-2] m-a-s-u-r-i-a_2
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-s-u-r-i-a_2';
+	src: url('/fonts/m-a-s-u-r-i-a_2.otf');
+}
+.font-8-2 {
+	font-family: m-a-s-u-r-i-a_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[8-3] m-a-s-u-r-i-a_3
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-s-u-r-i-a_3';
+	src: url('/fonts/m-a-s-u-r-i-a_3.otf');
+}
+.font-8-3 {
+	font-family: m-a-s-u-r-i-a_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[8-4] m-a-s-u-r-i-a_4
+=====================================*/
+
+@font-face {
+	font-family: 'm-a-s-u-r-i-a_4';
+	src: url('/fonts/m-a-s-u-r-i-a_4.otf');
+}
+.font-8-4 {
+	font-family: m-a-s-u-r-i-a_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[9-1] m-e-r-i-d-i-a-n_1
+=====================================*/
+
+@font-face {
+	font-family: 'm-e-r-i-d-i-a-n_1';
+	src: url('/fonts/m-e-r-i-d-i-a-n_1.otf');
+}
+.font-9-1 {
+	font-family: m-e-r-i-d-i-a-n_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[9-2] m-e-r-i-d-i-a-n_2
+=====================================*/
+
+@font-face {
+	font-family: 'm-e-r-i-d-i-a-n_2';
+	src: url('/fonts/m-e-r-i-d-i-a-n_2.otf');
+}
+.font-9-2 {
+	font-family: m-e-r-i-d-i-a-n_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[9-3] m-e-r-i-d-i-a-n_3
+=====================================*/
+
+@font-face {
+	font-family: 'm-e-r-i-d-i-a-n_3';
+	src: url('/fonts/m-e-r-i-d-i-a-n_3.otf');
+}
+.font-9-3 {
+	font-family: m-e-r-i-d-i-a-n_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[9-4] m-e-r-i-d-i-a-n_4
+=====================================*/
+
+@font-face {
+	font-family: 'm-e-r-i-d-i-a-n_4';
+	src: url('/fonts/m-e-r-i-d-i-a-n_4.otf');
+}
+.font-9-4 {
+	font-family: m-e-r-i-d-i-a-n_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-1] m-o-d-e-r-a-t_1
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_1';
+	src: url('/fonts/m-o-d-e-r-a-t_1.otf');
+}
+.font-10-1 {
+	font-family: m-o-d-e-r-a-t_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-2] m-o-d-e-r-a-t_2
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_2';
+	src: url('/fonts/m-o-d-e-r-a-t_2.otf');
+}
+.font-10-2 {
+	font-family: m-o-d-e-r-a-t_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-3] m-o-d-e-r-a-t_3
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_3';
+	src: url('/fonts/m-o-d-e-r-a-t_3.otf');
+}
+.font-10-3 {
+	font-family: m-o-d-e-r-a-t_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-4] m-o-d-e-r-a-t_4
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_4';
+	src: url('/fonts/m-o-d-e-r-a-t_4.otf');
+}
+.font-10-4 {
+	font-family: m-o-d-e-r-a-t_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-5] m-o-d-e-r-a-t_5
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_5';
+	src: url('/fonts/m-o-d-e-r-a-t_5.otf');
+}
+.font-10-5 {
+	font-family: m-o-d-e-r-a-t_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[10-6] m-o-d-e-r-a-t_6
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-d-e-r-a-t_6';
+	src: url('/fonts/m-o-d-e-r-a-t_6.otf');
+}
+.font-10-6 {
+	font-family: m-o-d-e-r-a-t_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-1] m-o-n-u-m-e-n-t_1
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_1';
+	src: url('/fonts/m-o-n-u-m-e-n-t_1.ttf');
+}
+.font-11-1 {
+	font-family: m-o-n-u-m-e-n-t_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-2] m-o-n-u-m-e-n-t_2
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_2';
+	src: url('/fonts/m-o-n-u-m-e-n-t_2.ttf');
+}
+.font-11-2 {
+	font-family: m-o-n-u-m-e-n-t_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-3] m-o-n-u-m-e-n-t_3
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_3';
+	src: url('/fonts/m-o-n-u-m-e-n-t_3.ttf');
+}
+.font-11-3 {
+	font-family: m-o-n-u-m-e-n-t_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-4] m-o-n-u-m-e-n-t_4
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_4';
+	src: url('/fonts/m-o-n-u-m-e-n-t_4.ttf');
+}
+.font-11-4 {
+	font-family: m-o-n-u-m-e-n-t_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-5] m-o-n-u-m-e-n-t_5
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_5';
+	src: url('/fonts/m-o-n-u-m-e-n-t_5.ttf');
+}
+.font-11-5 {
+	font-family: m-o-n-u-m-e-n-t_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[11-6] m-o-n-u-m-e-n-t_6
+=====================================*/
+
+@font-face {
+	font-family: 'm-o-n-u-m-e-n-t_6';
+	src: url('/fonts/m-o-n-u-m-e-n-t_6.ttf');
+}
+.font-11-6 {
+	font-family: m-o-n-u-m-e-n-t_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-1] n-e-u-e-h-a-a-s_1
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_1';
+	src: url('/fonts/n-e-u-e-h-a-a-s_1.ttf');
+}
+.font-12-1 {
+	font-family: n-e-u-e-h-a-a-s_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-2] n-e-u-e-h-a-a-s_2
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_2';
+	src: url('/fonts/n-e-u-e-h-a-a-s_2.ttf');
+}
+.font-12-2 {
+	font-family: n-e-u-e-h-a-a-s_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-3] n-e-u-e-h-a-a-s_3
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_3';
+	src: url('/fonts/n-e-u-e-h-a-a-s_3.ttf');
+}
+.font-12-3 {
+	font-family: n-e-u-e-h-a-a-s_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-4] n-e-u-e-h-a-a-s_4
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_4';
+	src: url('/fonts/n-e-u-e-h-a-a-s_4.ttf');
+}
+.font-12-4 {
+	font-family: n-e-u-e-h-a-a-s_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-5] n-e-u-e-h-a-a-s_5
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_5';
+	src: url('/fonts/n-e-u-e-h-a-a-s_5.ttf');
+}
+.font-12-5 {
+	font-family: n-e-u-e-h-a-a-s_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-6] n-e-u-e-h-a-a-s_6
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_6';
+	src: url('/fonts/n-e-u-e-h-a-a-s_6.ttf');
+}
+.font-12-6 {
+	font-family: n-e-u-e-h-a-a-s_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-7] n-e-u-e-h-a-a-s_7
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_7';
+	src: url('/fonts/n-e-u-e-h-a-a-s_7.ttf');
+}
+.font-12-7 {
+	font-family: n-e-u-e-h-a-a-s_7!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-8] n-e-u-e-h-a-a-s_8
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_8';
+	src: url('/fonts/n-e-u-e-h-a-a-s_8.ttf');
+}
+.font-12-8 {
+	font-family: n-e-u-e-h-a-a-s_8!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-9] n-e-u-e-h-a-a-s_9
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_9';
+	src: url('/fonts/n-e-u-e-h-a-a-s_9.otf');
+}
+.font-12-9 {
+	font-family: n-e-u-e-h-a-a-s_9!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-10] n-e-u-e-h-a-a-s_10
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_10';
+	src: url('/fonts/n-e-u-e-h-a-a-s_10.otf');
+}
+.font-12-10 {
+	font-family: n-e-u-e-h-a-a-s_10!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-11] n-e-u-e-h-a-a-s_11
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_11';
+	src: url('/fonts/n-e-u-e-h-a-a-s_11.otf');
+}
+.font-12-11 {
+	font-family: n-e-u-e-h-a-a-s_11!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-12] n-e-u-e-h-a-a-s_12
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_12';
+	src: url('/fonts/n-e-u-e-h-a-a-s_12.ttf');
+}
+.font-12-12 {
+	font-family: n-e-u-e-h-a-a-s_12!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-13] n-e-u-e-h-a-a-s_13
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_13';
+	src: url('/fonts/n-e-u-e-h-a-a-s_13.ttf');
+}
+.font-12-13 {
+	font-family: n-e-u-e-h-a-a-s_13!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-14] n-e-u-e-h-a-a-s_14
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_14';
+	src: url('/fonts/n-e-u-e-h-a-a-s_14.ttf');
+}
+.font-12-14 {
+	font-family: n-e-u-e-h-a-a-s_14!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-15] n-e-u-e-h-a-a-s_15
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_15';
+	src: url('/fonts/n-e-u-e-h-a-a-s_15.ttf');
+}
+.font-12-15 {
+	font-family: n-e-u-e-h-a-a-s_15!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-16] n-e-u-e-h-a-a-s_16
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_16';
+	src: url('/fonts/n-e-u-e-h-a-a-s_16.ttf');
+}
+.font-12-16 {
+	font-family: n-e-u-e-h-a-a-s_16!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-17] n-e-u-e-h-a-a-s_17
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_17';
+	src: url('/fonts/n-e-u-e-h-a-a-s_17.ttf');
+}
+.font-12-17 {
+	font-family: n-e-u-e-h-a-a-s_17!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-18] n-e-u-e-h-a-a-s_18
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_18';
+	src: url('/fonts/n-e-u-e-h-a-a-s_18.ttf');
+}
+.font-12-18 {
+	font-family: n-e-u-e-h-a-a-s_18!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[12-19] n-e-u-e-h-a-a-s_19
+=====================================*/
+
+@font-face {
+	font-family: 'n-e-u-e-h-a-a-s_19';
+	src: url('/fonts/n-e-u-e-h-a-a-s_19.ttf');
+}
+.font-12-19 {
+	font-family: n-e-u-e-h-a-a-s_19!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[13-1] n-o-u-e-v-e-a-u_1
+=====================================*/
+
+@font-face {
+	font-family: 'n-o-u-e-v-e-a-u_1';
+	src: url('/fonts/n-o-u-e-v-e-a-u_1.ttf');
+}
+.font-13-1 {
+	font-family: n-o-u-e-v-e-a-u_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-1] o-s-m-o-s-e_1
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_1';
+	src: url('/fonts/o-s-m-o-s-e_1.otf');
+}
+.font-14-1 {
+	font-family: o-s-m-o-s-e_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-2] o-s-m-o-s-e_2
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_2';
+	src: url('/fonts/o-s-m-o-s-e_2.otf');
+}
+.font-14-2 {
+	font-family: o-s-m-o-s-e_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-3] o-s-m-o-s-e_3
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_3';
+	src: url('/fonts/o-s-m-o-s-e_3.otf');
+}
+.font-14-3 {
+	font-family: o-s-m-o-s-e_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-4] o-s-m-o-s-e_4
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_4';
+	src: url('/fonts/o-s-m-o-s-e_4.otf');
+}
+.font-14-4 {
+	font-family: o-s-m-o-s-e_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-5] o-s-m-o-s-e_5
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_5';
+	src: url('/fonts/o-s-m-o-s-e_5.otf');
+}
+.font-14-5 {
+	font-family: o-s-m-o-s-e_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-6] o-s-m-o-s-e_6
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_6';
+	src: url('/fonts/o-s-m-o-s-e_6.otf');
+}
+.font-14-6 {
+	font-family: o-s-m-o-s-e_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-7] o-s-m-o-s-e_7
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_7';
+	src: url('/fonts/o-s-m-o-s-e_7.otf');
+}
+.font-14-7 {
+	font-family: o-s-m-o-s-e_7!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-8] o-s-m-o-s-e_8
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_8';
+	src: url('/fonts/o-s-m-o-s-e_8.otf');
+}
+.font-14-8 {
+	font-family: o-s-m-o-s-e_8!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-9] o-s-m-o-s-e_9
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_9';
+	src: url('/fonts/o-s-m-o-s-e_9.otf');
+}
+.font-14-9 {
+	font-family: o-s-m-o-s-e_9!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-10] o-s-m-o-s-e_10
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_10';
+	src: url('/fonts/o-s-m-o-s-e_10.otf');
+}
+.font-14-10 {
+	font-family: o-s-m-o-s-e_10!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[14-11] o-s-m-o-s-e_11
+=====================================*/
+
+@font-face {
+	font-family: 'o-s-m-o-s-e_11';
+	src: url('/fonts/o-s-m-o-s-e_11.otf');
+}
+.font-14-11 {
+	font-family: o-s-m-o-s-e_11!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[15-1] s-o-r-i-a_1
+=====================================*/
+
+@font-face {
+	font-family: 's-o-r-i-a_1';
+	src: url('/fonts/s-o-r-i-a_1.ttf');
+}
+.font-15-1 {
+	font-family: s-o-r-i-a_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-1] s-o-u-v-e-n-i-r_1
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_1';
+	src: url('/fonts/s-o-u-v-e-n-i-r_1.otf');
+}
+.font-16-1 {
+	font-family: s-o-u-v-e-n-i-r_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-2] s-o-u-v-e-n-i-r_2
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_2';
+	src: url('/fonts/s-o-u-v-e-n-i-r_2.otf');
+}
+.font-16-2 {
+	font-family: s-o-u-v-e-n-i-r_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-3] s-o-u-v-e-n-i-r_3
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_3';
+	src: url('/fonts/s-o-u-v-e-n-i-r_3.otf');
+}
+.font-16-3 {
+	font-family: s-o-u-v-e-n-i-r_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-4] s-o-u-v-e-n-i-r_4
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_4';
+	src: url('/fonts/s-o-u-v-e-n-i-r_4.otf');
+}
+.font-16-4 {
+	font-family: s-o-u-v-e-n-i-r_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-5] s-o-u-v-e-n-i-r_5
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_5';
+	src: url('/fonts/s-o-u-v-e-n-i-r_5.otf');
+}
+.font-16-5 {
+	font-family: s-o-u-v-e-n-i-r_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[16-6] s-o-u-v-e-n-i-r_6
+=====================================*/
+
+@font-face {
+	font-family: 's-o-u-v-e-n-i-r_6';
+	src: url('/fonts/s-o-u-v-e-n-i-r_6.otf');
+}
+.font-16-6 {
+	font-family: s-o-u-v-e-n-i-r_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-1] s-u-r-t_1
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_1';
+	src: url('/fonts/s-u-r-t_1.ttf');
+}
+.font-17-1 {
+	font-family: s-u-r-t_1!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-2] s-u-r-t_2
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_2';
+	src: url('/fonts/s-u-r-t_2.otf');
+}
+.font-17-2 {
+	font-family: s-u-r-t_2!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-3] s-u-r-t_3
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_3';
+	src: url('/fonts/s-u-r-t_3.otf');
+}
+.font-17-3 {
+	font-family: s-u-r-t_3!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-4] s-u-r-t_4
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_4';
+	src: url('/fonts/s-u-r-t_4.otf');
+}
+.font-17-4 {
+	font-family: s-u-r-t_4!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-5] s-u-r-t_5
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_5';
+	src: url('/fonts/s-u-r-t_5.ttf');
+}
+.font-17-5 {
+	font-family: s-u-r-t_5!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-6] s-u-r-t_6
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_6';
+	src: url('/fonts/s-u-r-t_6.ttf');
+}
+.font-17-6 {
+	font-family: s-u-r-t_6!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-7] s-u-r-t_7
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_7';
+	src: url('/fonts/s-u-r-t_7.ttf');
+}
+.font-17-7 {
+	font-family: s-u-r-t_7!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-8] s-u-r-t_8
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_8';
+	src: url('/fonts/s-u-r-t_8.ttf');
+}
+.font-17-8 {
+	font-family: s-u-r-t_8!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-9] s-u-r-t_9
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_9';
+	src: url('/fonts/s-u-r-t_9.ttf');
+}
+.font-17-9 {
+	font-family: s-u-r-t_9!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-10] s-u-r-t_10
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_10';
+	src: url('/fonts/s-u-r-t_10.otf');
+}
+.font-17-10 {
+	font-family: s-u-r-t_10!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-11] s-u-r-t_11
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_11';
+	src: url('/fonts/s-u-r-t_11.otf');
+}
+.font-17-11 {
+	font-family: s-u-r-t_11!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			
+/*=====================================
+[17-12] s-u-r-t_12
+=====================================*/
+
+@font-face {
+	font-family: 's-u-r-t_12';
+	src: url('/fonts/s-u-r-t_12.otf');
+}
+.font-17-12 {
+	font-family: s-u-r-t_12!important;
+	font-weight: normal, bold, light;
+	font-style: italic, oblique, normal;
+}
+			

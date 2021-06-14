@@ -1,0 +1,1451 @@
+@import url(./../../../static/fonts.css);
+:root {
+  --container: 1280px;
+  --font-size: 15px;
+  --borders: 4px;
+  --stroke-width: 4px;
+  --media-sm: 576px;
+  --media-md: 768px;
+  --media-lg: 922px;
+  --media-elg: 1200px;
+  --color: hsl( 200, 10%, 12% );
+  --color-bright: hsl( 200, 10%, 12% );
+  --color-fade: hsl( 200, 10%, 50% );
+  --bg: hsl( 100, 10%, 96% );
+  --bg-pop: hsl( 200, 10%, 100% );
+  --bg-sink: hsl( 200, 10%, 50% ); }
+
+.dark {
+  --bg: hsl( 200, 10%, 10% );
+  --bg-pop: hsl( 200, 10%, 12% );
+  --bg-sink: hsl( 200, 10%, 2% );
+  --color: hsl( 200, 10%, 90% );
+  --color-bright: hsl( 200, 10%, 100% );
+  --color-fade: hsl( 200, 10%, 50% ); }
+
+@media only screen and (max-width: 576px) {
+  :root {
+    --font-size: 16px; } }
+
+:root {
+  --f0: 0.785714rem;
+  --f1: 1rem;
+  --f2: 1.2857rem;
+  --f3: 1.64285rem;
+  --f4: 2.071428rem;
+  --f5: 2.642857rem;
+  --column-spacing: 2em;
+  --icon-padding: 2.2em;
+  --input-padding: 0.6em 1em;
+  --button-padding: 0.8em 3em;
+  --font: 'm-e-r-i-d-i-a-n_2', sans-serif;
+  --font-monospace: monospace;
+  --font-serif: serif;
+  --font-sans-serif: sans-serif;
+  --font-cursive: cursive;
+  --font-slab: sans-serif;
+  --font-grotesque: sans-serif;
+  --line-height: 1.61803398875em;
+  --color-success: hsl( 150, 95%, 70% );
+  --color-info: hsl( 200, 95%, 70% );
+  --color-error: hsl( 340, 95%, 70% );
+  --color-alert: hsl( 50, 95%, 70% );
+  --bg-a: hsl( 300, 20%, 10% );
+  --bg-b: hsl( 300, 20%, 15% );
+  --bg-c: hsl( 300, 20%, 20% );
+  --bg-d: hsl( 300, 20%, 25% );
+  --bg-e: hsl( 300, 20%, 30% );
+  --color-a: hsl( 160, 90%, 65% );
+  --color-b: hsl( 200, 90%, 65% );
+  --color-c: hsl( 0, 90%, 65% );
+  --color-d: hsl( 240, 90%, 65% );
+  --color-e: hsl( 320, 90%, 65% );
+  --code: hsl( 200, 10%, 90% );
+  --code-operator: hsl( 200, 10%, 60% );
+  --code-punctuation: hsl( 290, 95%, 70% );
+  --code-number: hsl( 220, 95%, 80% );
+  --code-atrule: hsl( 180, 95%, 70% );
+  --code-cdata: hsl( 0, 95%, 70% );
+  --code-namespace: hsl( 60, 95%, 70% );
+  --code-property: hsl( 90, 95%, 70% );
+  --code-selector: hsl( 170, 95%, 70% );
+  --code-keyboard: hsl( 260, 95%, 70% );
+  --code-regex: hsl( 300, 95%, 70% ); }
+
+/* core sassis */
+html {
+  font-size: var(--font-size); }
+
+* {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  transform-origin: 50% 50%; }
+
+a {
+  text-decoration: none; }
+
+body, div, span, object, h1, p, a, address, big, code, img, q, s, small, strong, var, center, form, article, canvas, embed, footer, header, nav, time, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, footer, header, nav {
+  display: block; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+ q {
+  quotes: none; }
+
+ q:before, q:after {
+  content: '';
+  content: none; }
+
+.sassis, button, input, * {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: var(--line-height); }
+
+/* ---------------------- EVERYTHING ---------------------- */
+*, *:after, *:before, input {
+  border-style: solid;
+  border-width: 0;
+  background: transparent;
+  border-radius: 0px;
+  font-weight: normal; }
+
+ input[type=text], input[type=number], input[type=email] {
+  padding: var(--input-padding);
+  flex-basis: 0; }
+
+a {
+  text-decoration: none; }
+
+a {
+  cursor: pointer; }
+
+input, button, .button {
+  white-space: nowrap; }
+
+button, .button {
+  text-align: center;
+  padding: var(--button-padding); }
+
+ input, button, .button {
+  border-width: var(--stroke-width);
+  outline: none; }
+   input:disabled, input:disabled + span, button:disabled, button:disabled + span, .button:disabled, .button:disabled + span {
+    opacity: 0.5; }
+
+/* ---------------------- SELECT + CHEVRONS ---------------------- */
+
+/* ---------------------- FILE ---------------------- */
+.file input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ---------------------- INPUT RANGE ---------------------- */
+input[type=range] {
+  flex-basis: 0;
+  -webkit-appearance: none;
+  background: transparent; }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    min-height: 1em;
+    border: none;
+    border-radius: 0px; }
+   input[type=range].round::-webkit-slider-thumb {
+    border-radius: 100%; }
+  input[type=range].start, input[type=range].end {
+    min-height: 1em;
+    overflow: hidden; }
+    input[type=range].start::-webkit-slider-thumb, input[type=range].end::-webkit-slider-thumb {
+      width: 1%;
+      transform-origin: 0% 50%; }
+  input[type=range].start::-webkit-slider-thumb {
+    transform: scale(-200, 1); }
+  input[type=range].end::-webkit-slider-thumb {
+    transform: scale(200, 1); }
+
+/* ---------------------- INPUT COLOR ---------------------- */
+.color {
+  overflow: hidden;
+  position: relative;
+  padding: var(--input-padding); }
+  .color input {
+    padding: 0;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%; }
+
+/* ---------------------- RADIOS + CHECKBOXES ---------------------- */
+.dot {
+  overflow: hidden;
+  position: relative; }
+
+/* backgrounds w. pop and sink */
+
+.bg, .sassis {
+  background-color: var(--bg); }
+
+/* colors w. bright and fade */
+* {
+  border-color: var(--color); }
+
+h1 {
+  color: var(--color); }
+
+input, input[type=range] {
+  color: var(--color); }
+
+ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
+  box-shadow: 0px 0px 0px 1px var(--color) inset; }
+
+input[type=range]:not([disabled]):active, input[type=range]:not([disabled]).active {
+  box-shadow: 0px 0px 0px 1px var(--color) inset; }
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: var(--color); }
+
+.fill {
+  fill: var(--color); }
+
+.stroke {
+  stroke: var(--color); }
+
+button, .button {
+  border-color: var(--color);
+  color: var(--color); }
+
+.filled, button.filled, .button.filled {
+  background: var(--color);
+  color: var(--bg); }
+  .filled .fill, button.filled .fill, .button.filled .fill {
+    fill: var(--bg); }
+  .filled .stroke, button.filled .stroke, .button.filled .stroke {
+    stroke: var(--bg); }
+  .filled:after, .filled:before, button.filled:after, button.filled:before, .button.filled:after, .button.filled:before {
+    border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled), a:active .bg, a.active:not(.unclickable):not(.disabled), a.active .bg, a:focus:not(.unclickable):not(.disabled), a:focus .bg, button:active:not(.unclickable):not(.disabled), button:active .bg, button.active:not(.unclickable):not(.disabled), button.active .bg, button:focus:not(.unclickable):not(.disabled), button:focus .bg, .button:active:not(.unclickable):not(.disabled), .button:active .bg, .button.active:not(.unclickable):not(.disabled), .button.active .bg, .button:focus:not(.unclickable):not(.disabled), .button:focus .bg {
+  background: var(--color);
+  color: var(--bg); }
+  a:active:not(.unclickable):not(.disabled) .fill, a:active .bg .fill, a.active:not(.unclickable):not(.disabled) .fill, a.active .bg .fill, a:focus:not(.unclickable):not(.disabled) .fill, a:focus .bg .fill, button:active:not(.unclickable):not(.disabled) .fill, button:active .bg .fill, button.active:not(.unclickable):not(.disabled) .fill, button.active .bg .fill, button:focus:not(.unclickable):not(.disabled) .fill, button:focus .bg .fill, .button:active:not(.unclickable):not(.disabled) .fill, .button:active .bg .fill, .button.active:not(.unclickable):not(.disabled) .fill, .button.active .bg .fill, .button:focus:not(.unclickable):not(.disabled) .fill, .button:focus .bg .fill {
+    fill: var(--bg); }
+  a:active:not(.unclickable):not(.disabled) .stroke, a:active .bg .stroke, a.active:not(.unclickable):not(.disabled) .stroke, a.active .bg .stroke, a:focus:not(.unclickable):not(.disabled) .stroke, a:focus .bg .stroke, button:active:not(.unclickable):not(.disabled) .stroke, button:active .bg .stroke, button.active:not(.unclickable):not(.disabled) .stroke, button.active .bg .stroke, button:focus:not(.unclickable):not(.disabled) .stroke, button:focus .bg .stroke, .button:active:not(.unclickable):not(.disabled) .stroke, .button:active .bg .stroke, .button.active:not(.unclickable):not(.disabled) .stroke, .button.active .bg .stroke, .button:focus:not(.unclickable):not(.disabled) .stroke, .button:focus .bg .stroke {
+    stroke: var(--bg); }
+  a:active:not(.unclickable):not(.disabled):after, a:active:not(.unclickable):not(.disabled):before, a:active .bg:after, a:active .bg:before, a.active:not(.unclickable):not(.disabled):after, a.active:not(.unclickable):not(.disabled):before, a.active .bg:after, a.active .bg:before, a:focus:not(.unclickable):not(.disabled):after, a:focus:not(.unclickable):not(.disabled):before, a:focus .bg:after, a:focus .bg:before, button:active:not(.unclickable):not(.disabled):after, button:active:not(.unclickable):not(.disabled):before, button:active .bg:after, button:active .bg:before, button.active:not(.unclickable):not(.disabled):after, button.active:not(.unclickable):not(.disabled):before, button.active .bg:after, button.active .bg:before, button:focus:not(.unclickable):not(.disabled):after, button:focus:not(.unclickable):not(.disabled):before, button:focus .bg:after, button:focus .bg:before, .button:active:not(.unclickable):not(.disabled):after, .button:active:not(.unclickable):not(.disabled):before, .button:active .bg:after, .button:active .bg:before, .button.active:not(.unclickable):not(.disabled):after, .button.active:not(.unclickable):not(.disabled):before, .button.active .bg:after, .button.active .bg:before, .button:focus:not(.unclickable):not(.disabled):after, .button:focus:not(.unclickable):not(.disabled):before, .button:focus .bg:after, .button:focus .bg:before {
+    border-color: var(--bg); }
+
+a, button, .button {
+  color: var(--color);
+  border-color: var(--color); }
+
+.normal, .color, .sassis {
+  color: var(--color); }
+
+.normal, .color, .sassis {
+  border-color: var(--color); }
+
+* .normal, * .color, * .sassis {
+  border-color: var(--color); }
+
+h1.normal, h1.color, h1.sassis {
+  color: var(--color); }
+
+input.normal, input.color, input.sassis, input[type=range].normal, input[type=range].color, input[type=range].sassis {
+  color: var(--color); }
+
+ input[type=text]:focus.normal, input[type=text]:focus.color, input[type=text]:focus.sassis, input[type=number]:focus.normal, input[type=number]:focus.color, input[type=number]:focus.sassis, input[type=email]:focus.normal, input[type=email]:focus.color, input[type=email]:focus.sassis {
+  box-shadow: 0px 0px 0px 1px var(--color) inset; }
+
+input[type=range]:not([disabled]):active.normal, input[type=range]:not([disabled]):active.color, input[type=range]:not([disabled]):active.sassis, input[type=range]:not([disabled]).active.normal, input[type=range]:not([disabled]).active.color, input[type=range]:not([disabled]).active.sassis {
+  box-shadow: 0px 0px 0px 1px var(--color) inset; }
+
+input[type=range].normal::-webkit-slider-thumb, input[type=range].color::-webkit-slider-thumb, input[type=range].sassis::-webkit-slider-thumb {
+  background-color: var(--color); }
+
+.fill.normal, .fill.color, .fill.sassis {
+  fill: var(--color); }
+
+.stroke.normal, .stroke.color, .stroke.sassis {
+  stroke: var(--color); }
+
+button.normal, button.color, button.sassis, .button.normal, .button.color, .button.sassis {
+  border-color: var(--color); }
+
+button.normal, button.color, button.sassis, .button.normal, .button.color, .button.sassis {
+  color: var(--color); }
+
+.filled.normal, .filled.color, .filled.sassis, button.filled.normal, button.filled.color, button.filled.sassis, .button.filled.normal, .button.filled.color, .button.filled.sassis {
+  background: var(--color); }
+
+.filled.normal, .filled.color, .filled.sassis, button.filled.normal, button.filled.color, button.filled.sassis, .button.filled.normal, .button.filled.color, .button.filled.sassis {
+  color: var(--bg); }
+
+.filled .fill.normal, .filled .fill.color, .filled .fill.sassis, button.filled .fill.normal, button.filled .fill.color, button.filled .fill.sassis, .button.filled .fill.normal, .button.filled .fill.color, .button.filled .fill.sassis {
+  fill: var(--bg); }
+
+.filled .stroke.normal, .filled .stroke.color, .filled .stroke.sassis, button.filled .stroke.normal, button.filled .stroke.color, button.filled .stroke.sassis, .button.filled .stroke.normal, .button.filled .stroke.color, .button.filled .stroke.sassis {
+  stroke: var(--bg); }
+
+.filled:after.normal, .filled:after.color, .filled:after.sassis, .filled:before.normal, .filled:before.color, .filled:before.sassis, button.filled:after.normal, button.filled:after.color, button.filled:after.sassis, button.filled:before.normal, button.filled:before.color, button.filled:before.sassis, .button.filled:after.normal, .button.filled:after.color, .button.filled:after.sassis, .button.filled:before.normal, .button.filled:before.color, .button.filled:before.sassis {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).normal, a:active:not(.unclickable):not(.disabled).color, a:active:not(.unclickable):not(.disabled).sassis, a:active .bg.normal, a:active .bg.color, a:active .bg.sassis, a.active:not(.unclickable):not(.disabled).normal, a.active:not(.unclickable):not(.disabled).color, a.active:not(.unclickable):not(.disabled).sassis, a.active .bg.normal, a.active .bg.color, a.active .bg.sassis, a:focus:not(.unclickable):not(.disabled).normal, a:focus:not(.unclickable):not(.disabled).color, a:focus:not(.unclickable):not(.disabled).sassis, a:focus .bg.normal, a:focus .bg.color, a:focus .bg.sassis, button:active:not(.unclickable):not(.disabled).normal, button:active:not(.unclickable):not(.disabled).color, button:active:not(.unclickable):not(.disabled).sassis, button:active .bg.normal, button:active .bg.color, button:active .bg.sassis, button.active:not(.unclickable):not(.disabled).normal, button.active:not(.unclickable):not(.disabled).color, button.active:not(.unclickable):not(.disabled).sassis, button.active .bg.normal, button.active .bg.color, button.active .bg.sassis, button:focus:not(.unclickable):not(.disabled).normal, button:focus:not(.unclickable):not(.disabled).color, button:focus:not(.unclickable):not(.disabled).sassis, button:focus .bg.normal, button:focus .bg.color, button:focus .bg.sassis, .button:active:not(.unclickable):not(.disabled).normal, .button:active:not(.unclickable):not(.disabled).color, .button:active:not(.unclickable):not(.disabled).sassis, .button:active .bg.normal, .button:active .bg.color, .button:active .bg.sassis, .button.active:not(.unclickable):not(.disabled).normal, .button.active:not(.unclickable):not(.disabled).color, .button.active:not(.unclickable):not(.disabled).sassis, .button.active .bg.normal, .button.active .bg.color, .button.active .bg.sassis, .button:focus:not(.unclickable):not(.disabled).normal, .button:focus:not(.unclickable):not(.disabled).color, .button:focus:not(.unclickable):not(.disabled).sassis, .button:focus .bg.normal, .button:focus .bg.color, .button:focus .bg.sassis {
+  background: var(--color); }
+
+a:active:not(.unclickable):not(.disabled).normal, a:active:not(.unclickable):not(.disabled).color, a:active:not(.unclickable):not(.disabled).sassis, a:active .bg.normal, a:active .bg.color, a:active .bg.sassis, a.active:not(.unclickable):not(.disabled).normal, a.active:not(.unclickable):not(.disabled).color, a.active:not(.unclickable):not(.disabled).sassis, a.active .bg.normal, a.active .bg.color, a.active .bg.sassis, a:focus:not(.unclickable):not(.disabled).normal, a:focus:not(.unclickable):not(.disabled).color, a:focus:not(.unclickable):not(.disabled).sassis, a:focus .bg.normal, a:focus .bg.color, a:focus .bg.sassis, button:active:not(.unclickable):not(.disabled).normal, button:active:not(.unclickable):not(.disabled).color, button:active:not(.unclickable):not(.disabled).sassis, button:active .bg.normal, button:active .bg.color, button:active .bg.sassis, button.active:not(.unclickable):not(.disabled).normal, button.active:not(.unclickable):not(.disabled).color, button.active:not(.unclickable):not(.disabled).sassis, button.active .bg.normal, button.active .bg.color, button.active .bg.sassis, button:focus:not(.unclickable):not(.disabled).normal, button:focus:not(.unclickable):not(.disabled).color, button:focus:not(.unclickable):not(.disabled).sassis, button:focus .bg.normal, button:focus .bg.color, button:focus .bg.sassis, .button:active:not(.unclickable):not(.disabled).normal, .button:active:not(.unclickable):not(.disabled).color, .button:active:not(.unclickable):not(.disabled).sassis, .button:active .bg.normal, .button:active .bg.color, .button:active .bg.sassis, .button.active:not(.unclickable):not(.disabled).normal, .button.active:not(.unclickable):not(.disabled).color, .button.active:not(.unclickable):not(.disabled).sassis, .button.active .bg.normal, .button.active .bg.color, .button.active .bg.sassis, .button:focus:not(.unclickable):not(.disabled).normal, .button:focus:not(.unclickable):not(.disabled).color, .button:focus:not(.unclickable):not(.disabled).sassis, .button:focus .bg.normal, .button:focus .bg.color, .button:focus .bg.sassis {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.normal, a:active:not(.unclickable):not(.disabled) .fill.color, a:active:not(.unclickable):not(.disabled) .fill.sassis, a:active .bg .fill.normal, a:active .bg .fill.color, a:active .bg .fill.sassis, a.active:not(.unclickable):not(.disabled) .fill.normal, a.active:not(.unclickable):not(.disabled) .fill.color, a.active:not(.unclickable):not(.disabled) .fill.sassis, a.active .bg .fill.normal, a.active .bg .fill.color, a.active .bg .fill.sassis, a:focus:not(.unclickable):not(.disabled) .fill.normal, a:focus:not(.unclickable):not(.disabled) .fill.color, a:focus:not(.unclickable):not(.disabled) .fill.sassis, a:focus .bg .fill.normal, a:focus .bg .fill.color, a:focus .bg .fill.sassis, button:active:not(.unclickable):not(.disabled) .fill.normal, button:active:not(.unclickable):not(.disabled) .fill.color, button:active:not(.unclickable):not(.disabled) .fill.sassis, button:active .bg .fill.normal, button:active .bg .fill.color, button:active .bg .fill.sassis, button.active:not(.unclickable):not(.disabled) .fill.normal, button.active:not(.unclickable):not(.disabled) .fill.color, button.active:not(.unclickable):not(.disabled) .fill.sassis, button.active .bg .fill.normal, button.active .bg .fill.color, button.active .bg .fill.sassis, button:focus:not(.unclickable):not(.disabled) .fill.normal, button:focus:not(.unclickable):not(.disabled) .fill.color, button:focus:not(.unclickable):not(.disabled) .fill.sassis, button:focus .bg .fill.normal, button:focus .bg .fill.color, button:focus .bg .fill.sassis, .button:active:not(.unclickable):not(.disabled) .fill.normal, .button:active:not(.unclickable):not(.disabled) .fill.color, .button:active:not(.unclickable):not(.disabled) .fill.sassis, .button:active .bg .fill.normal, .button:active .bg .fill.color, .button:active .bg .fill.sassis, .button.active:not(.unclickable):not(.disabled) .fill.normal, .button.active:not(.unclickable):not(.disabled) .fill.color, .button.active:not(.unclickable):not(.disabled) .fill.sassis, .button.active .bg .fill.normal, .button.active .bg .fill.color, .button.active .bg .fill.sassis, .button:focus:not(.unclickable):not(.disabled) .fill.normal, .button:focus:not(.unclickable):not(.disabled) .fill.color, .button:focus:not(.unclickable):not(.disabled) .fill.sassis, .button:focus .bg .fill.normal, .button:focus .bg .fill.color, .button:focus .bg .fill.sassis {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.normal, a:active:not(.unclickable):not(.disabled) .stroke.color, a:active:not(.unclickable):not(.disabled) .stroke.sassis, a:active .bg .stroke.normal, a:active .bg .stroke.color, a:active .bg .stroke.sassis, a.active:not(.unclickable):not(.disabled) .stroke.normal, a.active:not(.unclickable):not(.disabled) .stroke.color, a.active:not(.unclickable):not(.disabled) .stroke.sassis, a.active .bg .stroke.normal, a.active .bg .stroke.color, a.active .bg .stroke.sassis, a:focus:not(.unclickable):not(.disabled) .stroke.normal, a:focus:not(.unclickable):not(.disabled) .stroke.color, a:focus:not(.unclickable):not(.disabled) .stroke.sassis, a:focus .bg .stroke.normal, a:focus .bg .stroke.color, a:focus .bg .stroke.sassis, button:active:not(.unclickable):not(.disabled) .stroke.normal, button:active:not(.unclickable):not(.disabled) .stroke.color, button:active:not(.unclickable):not(.disabled) .stroke.sassis, button:active .bg .stroke.normal, button:active .bg .stroke.color, button:active .bg .stroke.sassis, button.active:not(.unclickable):not(.disabled) .stroke.normal, button.active:not(.unclickable):not(.disabled) .stroke.color, button.active:not(.unclickable):not(.disabled) .stroke.sassis, button.active .bg .stroke.normal, button.active .bg .stroke.color, button.active .bg .stroke.sassis, button:focus:not(.unclickable):not(.disabled) .stroke.normal, button:focus:not(.unclickable):not(.disabled) .stroke.color, button:focus:not(.unclickable):not(.disabled) .stroke.sassis, button:focus .bg .stroke.normal, button:focus .bg .stroke.color, button:focus .bg .stroke.sassis, .button:active:not(.unclickable):not(.disabled) .stroke.normal, .button:active:not(.unclickable):not(.disabled) .stroke.color, .button:active:not(.unclickable):not(.disabled) .stroke.sassis, .button:active .bg .stroke.normal, .button:active .bg .stroke.color, .button:active .bg .stroke.sassis, .button.active:not(.unclickable):not(.disabled) .stroke.normal, .button.active:not(.unclickable):not(.disabled) .stroke.color, .button.active:not(.unclickable):not(.disabled) .stroke.sassis, .button.active .bg .stroke.normal, .button.active .bg .stroke.color, .button.active .bg .stroke.sassis, .button:focus:not(.unclickable):not(.disabled) .stroke.normal, .button:focus:not(.unclickable):not(.disabled) .stroke.color, .button:focus:not(.unclickable):not(.disabled) .stroke.sassis, .button:focus .bg .stroke.normal, .button:focus .bg .stroke.color, .button:focus .bg .stroke.sassis {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.normal, a:active:not(.unclickable):not(.disabled):after.color, a:active:not(.unclickable):not(.disabled):after.sassis, a:active:not(.unclickable):not(.disabled):before.normal, a:active:not(.unclickable):not(.disabled):before.color, a:active:not(.unclickable):not(.disabled):before.sassis, a:active .bg:after.normal, a:active .bg:after.color, a:active .bg:after.sassis, a:active .bg:before.normal, a:active .bg:before.color, a:active .bg:before.sassis, a.active:not(.unclickable):not(.disabled):after.normal, a.active:not(.unclickable):not(.disabled):after.color, a.active:not(.unclickable):not(.disabled):after.sassis, a.active:not(.unclickable):not(.disabled):before.normal, a.active:not(.unclickable):not(.disabled):before.color, a.active:not(.unclickable):not(.disabled):before.sassis, a.active .bg:after.normal, a.active .bg:after.color, a.active .bg:after.sassis, a.active .bg:before.normal, a.active .bg:before.color, a.active .bg:before.sassis, a:focus:not(.unclickable):not(.disabled):after.normal, a:focus:not(.unclickable):not(.disabled):after.color, a:focus:not(.unclickable):not(.disabled):after.sassis, a:focus:not(.unclickable):not(.disabled):before.normal, a:focus:not(.unclickable):not(.disabled):before.color, a:focus:not(.unclickable):not(.disabled):before.sassis, a:focus .bg:after.normal, a:focus .bg:after.color, a:focus .bg:after.sassis, a:focus .bg:before.normal, a:focus .bg:before.color, a:focus .bg:before.sassis, button:active:not(.unclickable):not(.disabled):after.normal, button:active:not(.unclickable):not(.disabled):after.color, button:active:not(.unclickable):not(.disabled):after.sassis, button:active:not(.unclickable):not(.disabled):before.normal, button:active:not(.unclickable):not(.disabled):before.color, button:active:not(.unclickable):not(.disabled):before.sassis, button:active .bg:after.normal, button:active .bg:after.color, button:active .bg:after.sassis, button:active .bg:before.normal, button:active .bg:before.color, button:active .bg:before.sassis, button.active:not(.unclickable):not(.disabled):after.normal, button.active:not(.unclickable):not(.disabled):after.color, button.active:not(.unclickable):not(.disabled):after.sassis, button.active:not(.unclickable):not(.disabled):before.normal, button.active:not(.unclickable):not(.disabled):before.color, button.active:not(.unclickable):not(.disabled):before.sassis, button.active .bg:after.normal, button.active .bg:after.color, button.active .bg:after.sassis, button.active .bg:before.normal, button.active .bg:before.color, button.active .bg:before.sassis, button:focus:not(.unclickable):not(.disabled):after.normal, button:focus:not(.unclickable):not(.disabled):after.color, button:focus:not(.unclickable):not(.disabled):after.sassis, button:focus:not(.unclickable):not(.disabled):before.normal, button:focus:not(.unclickable):not(.disabled):before.color, button:focus:not(.unclickable):not(.disabled):before.sassis, button:focus .bg:after.normal, button:focus .bg:after.color, button:focus .bg:after.sassis, button:focus .bg:before.normal, button:focus .bg:before.color, button:focus .bg:before.sassis, .button:active:not(.unclickable):not(.disabled):after.normal, .button:active:not(.unclickable):not(.disabled):after.color, .button:active:not(.unclickable):not(.disabled):after.sassis, .button:active:not(.unclickable):not(.disabled):before.normal, .button:active:not(.unclickable):not(.disabled):before.color, .button:active:not(.unclickable):not(.disabled):before.sassis, .button:active .bg:after.normal, .button:active .bg:after.color, .button:active .bg:after.sassis, .button:active .bg:before.normal, .button:active .bg:before.color, .button:active .bg:before.sassis, .button.active:not(.unclickable):not(.disabled):after.normal, .button.active:not(.unclickable):not(.disabled):after.color, .button.active:not(.unclickable):not(.disabled):after.sassis, .button.active:not(.unclickable):not(.disabled):before.normal, .button.active:not(.unclickable):not(.disabled):before.color, .button.active:not(.unclickable):not(.disabled):before.sassis, .button.active .bg:after.normal, .button.active .bg:after.color, .button.active .bg:after.sassis, .button.active .bg:before.normal, .button.active .bg:before.color, .button.active .bg:before.sassis, .button:focus:not(.unclickable):not(.disabled):after.normal, .button:focus:not(.unclickable):not(.disabled):after.color, .button:focus:not(.unclickable):not(.disabled):after.sassis, .button:focus:not(.unclickable):not(.disabled):before.normal, .button:focus:not(.unclickable):not(.disabled):before.color, .button:focus:not(.unclickable):not(.disabled):before.sassis, .button:focus .bg:after.normal, .button:focus .bg:after.color, .button:focus .bg:after.sassis, .button:focus .bg:before.normal, .button:focus .bg:before.color, .button:focus .bg:before.sassis {
+  border-color: var(--bg); }
+
+a.normal, a.color, a.sassis, button.normal, button.color, button.sassis, .button.normal, .button.color, .button.sassis {
+  color: var(--color); }
+
+a.normal, a.color, a.sassis, button.normal, button.color, button.sassis, .button.normal, .button.color, .button.sassis {
+  border-color: var(--color); }
+
+.strong, .focus {
+  color: var(--color-bright); }
+
+.strong, .focus {
+  border-color: var(--color-bright); }
+
+* .strong, * .focus {
+  border-color: var(--color-bright); }
+
+h1.strong, h1.focus {
+  color: var(--color-bright); }
+
+input.strong, input.focus, input[type=range].strong, input[type=range].focus {
+  color: var(--color-bright); }
+
+ input[type=text]:focus.strong, input[type=text]:focus.focus, input[type=number]:focus.strong, input[type=number]:focus.focus, input[type=email]:focus.strong, input[type=email]:focus.focus {
+  box-shadow: 0px 0px 0px 1px var(--color-bright) inset; }
+
+input[type=range]:not([disabled]):active.strong, input[type=range]:not([disabled]):active.focus, input[type=range]:not([disabled]).active.strong, input[type=range]:not([disabled]).active.focus {
+  box-shadow: 0px 0px 0px 1px var(--color-bright) inset; }
+
+input[type=range].strong::-webkit-slider-thumb, input[type=range].focus::-webkit-slider-thumb {
+  background-color: var(--color-bright); }
+
+.fill.strong, .fill.focus {
+  fill: var(--color-bright); }
+
+.stroke.strong, .stroke.focus {
+  stroke: var(--color-bright); }
+
+button.strong, button.focus, .button.strong, .button.focus {
+  border-color: var(--color-bright); }
+
+button.strong, button.focus, .button.strong, .button.focus {
+  color: var(--color-bright); }
+
+.filled.strong, .filled.focus, button.filled.strong, button.filled.focus, .button.filled.strong, .button.filled.focus {
+  background: var(--color-bright); }
+
+.filled.strong, .filled.focus, button.filled.strong, button.filled.focus, .button.filled.strong, .button.filled.focus {
+  color: var(--bg); }
+
+.filled .fill.strong, .filled .fill.focus, button.filled .fill.strong, button.filled .fill.focus, .button.filled .fill.strong, .button.filled .fill.focus {
+  fill: var(--bg); }
+
+.filled .stroke.strong, .filled .stroke.focus, button.filled .stroke.strong, button.filled .stroke.focus, .button.filled .stroke.strong, .button.filled .stroke.focus {
+  stroke: var(--bg); }
+
+.filled:after.strong, .filled:after.focus, .filled:before.strong, .filled:before.focus, button.filled:after.strong, button.filled:after.focus, button.filled:before.strong, button.filled:before.focus, .button.filled:after.strong, .button.filled:after.focus, .button.filled:before.strong, .button.filled:before.focus {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).strong, a:active:not(.unclickable):not(.disabled).focus, a:active .bg.strong, a:active .bg.focus, a.active:not(.unclickable):not(.disabled).strong, a.active:not(.unclickable):not(.disabled).focus, a.active .bg.strong, a.active .bg.focus, a:focus:not(.unclickable):not(.disabled).strong, a:focus:not(.unclickable):not(.disabled).focus, a:focus .bg.strong, a:focus .bg.focus, button:active:not(.unclickable):not(.disabled).strong, button:active:not(.unclickable):not(.disabled).focus, button:active .bg.strong, button:active .bg.focus, button.active:not(.unclickable):not(.disabled).strong, button.active:not(.unclickable):not(.disabled).focus, button.active .bg.strong, button.active .bg.focus, button:focus:not(.unclickable):not(.disabled).strong, button:focus:not(.unclickable):not(.disabled).focus, button:focus .bg.strong, button:focus .bg.focus, .button:active:not(.unclickable):not(.disabled).strong, .button:active:not(.unclickable):not(.disabled).focus, .button:active .bg.strong, .button:active .bg.focus, .button.active:not(.unclickable):not(.disabled).strong, .button.active:not(.unclickable):not(.disabled).focus, .button.active .bg.strong, .button.active .bg.focus, .button:focus:not(.unclickable):not(.disabled).strong, .button:focus:not(.unclickable):not(.disabled).focus, .button:focus .bg.strong, .button:focus .bg.focus {
+  background: var(--color-bright); }
+
+a:active:not(.unclickable):not(.disabled).strong, a:active:not(.unclickable):not(.disabled).focus, a:active .bg.strong, a:active .bg.focus, a.active:not(.unclickable):not(.disabled).strong, a.active:not(.unclickable):not(.disabled).focus, a.active .bg.strong, a.active .bg.focus, a:focus:not(.unclickable):not(.disabled).strong, a:focus:not(.unclickable):not(.disabled).focus, a:focus .bg.strong, a:focus .bg.focus, button:active:not(.unclickable):not(.disabled).strong, button:active:not(.unclickable):not(.disabled).focus, button:active .bg.strong, button:active .bg.focus, button.active:not(.unclickable):not(.disabled).strong, button.active:not(.unclickable):not(.disabled).focus, button.active .bg.strong, button.active .bg.focus, button:focus:not(.unclickable):not(.disabled).strong, button:focus:not(.unclickable):not(.disabled).focus, button:focus .bg.strong, button:focus .bg.focus, .button:active:not(.unclickable):not(.disabled).strong, .button:active:not(.unclickable):not(.disabled).focus, .button:active .bg.strong, .button:active .bg.focus, .button.active:not(.unclickable):not(.disabled).strong, .button.active:not(.unclickable):not(.disabled).focus, .button.active .bg.strong, .button.active .bg.focus, .button:focus:not(.unclickable):not(.disabled).strong, .button:focus:not(.unclickable):not(.disabled).focus, .button:focus .bg.strong, .button:focus .bg.focus {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.strong, a:active:not(.unclickable):not(.disabled) .fill.focus, a:active .bg .fill.strong, a:active .bg .fill.focus, a.active:not(.unclickable):not(.disabled) .fill.strong, a.active:not(.unclickable):not(.disabled) .fill.focus, a.active .bg .fill.strong, a.active .bg .fill.focus, a:focus:not(.unclickable):not(.disabled) .fill.strong, a:focus:not(.unclickable):not(.disabled) .fill.focus, a:focus .bg .fill.strong, a:focus .bg .fill.focus, button:active:not(.unclickable):not(.disabled) .fill.strong, button:active:not(.unclickable):not(.disabled) .fill.focus, button:active .bg .fill.strong, button:active .bg .fill.focus, button.active:not(.unclickable):not(.disabled) .fill.strong, button.active:not(.unclickable):not(.disabled) .fill.focus, button.active .bg .fill.strong, button.active .bg .fill.focus, button:focus:not(.unclickable):not(.disabled) .fill.strong, button:focus:not(.unclickable):not(.disabled) .fill.focus, button:focus .bg .fill.strong, button:focus .bg .fill.focus, .button:active:not(.unclickable):not(.disabled) .fill.strong, .button:active:not(.unclickable):not(.disabled) .fill.focus, .button:active .bg .fill.strong, .button:active .bg .fill.focus, .button.active:not(.unclickable):not(.disabled) .fill.strong, .button.active:not(.unclickable):not(.disabled) .fill.focus, .button.active .bg .fill.strong, .button.active .bg .fill.focus, .button:focus:not(.unclickable):not(.disabled) .fill.strong, .button:focus:not(.unclickable):not(.disabled) .fill.focus, .button:focus .bg .fill.strong, .button:focus .bg .fill.focus {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.strong, a:active:not(.unclickable):not(.disabled) .stroke.focus, a:active .bg .stroke.strong, a:active .bg .stroke.focus, a.active:not(.unclickable):not(.disabled) .stroke.strong, a.active:not(.unclickable):not(.disabled) .stroke.focus, a.active .bg .stroke.strong, a.active .bg .stroke.focus, a:focus:not(.unclickable):not(.disabled) .stroke.strong, a:focus:not(.unclickable):not(.disabled) .stroke.focus, a:focus .bg .stroke.strong, a:focus .bg .stroke.focus, button:active:not(.unclickable):not(.disabled) .stroke.strong, button:active:not(.unclickable):not(.disabled) .stroke.focus, button:active .bg .stroke.strong, button:active .bg .stroke.focus, button.active:not(.unclickable):not(.disabled) .stroke.strong, button.active:not(.unclickable):not(.disabled) .stroke.focus, button.active .bg .stroke.strong, button.active .bg .stroke.focus, button:focus:not(.unclickable):not(.disabled) .stroke.strong, button:focus:not(.unclickable):not(.disabled) .stroke.focus, button:focus .bg .stroke.strong, button:focus .bg .stroke.focus, .button:active:not(.unclickable):not(.disabled) .stroke.strong, .button:active:not(.unclickable):not(.disabled) .stroke.focus, .button:active .bg .stroke.strong, .button:active .bg .stroke.focus, .button.active:not(.unclickable):not(.disabled) .stroke.strong, .button.active:not(.unclickable):not(.disabled) .stroke.focus, .button.active .bg .stroke.strong, .button.active .bg .stroke.focus, .button:focus:not(.unclickable):not(.disabled) .stroke.strong, .button:focus:not(.unclickable):not(.disabled) .stroke.focus, .button:focus .bg .stroke.strong, .button:focus .bg .stroke.focus {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.strong, a:active:not(.unclickable):not(.disabled):after.focus, a:active:not(.unclickable):not(.disabled):before.strong, a:active:not(.unclickable):not(.disabled):before.focus, a:active .bg:after.strong, a:active .bg:after.focus, a:active .bg:before.strong, a:active .bg:before.focus, a.active:not(.unclickable):not(.disabled):after.strong, a.active:not(.unclickable):not(.disabled):after.focus, a.active:not(.unclickable):not(.disabled):before.strong, a.active:not(.unclickable):not(.disabled):before.focus, a.active .bg:after.strong, a.active .bg:after.focus, a.active .bg:before.strong, a.active .bg:before.focus, a:focus:not(.unclickable):not(.disabled):after.strong, a:focus:not(.unclickable):not(.disabled):after.focus, a:focus:not(.unclickable):not(.disabled):before.strong, a:focus:not(.unclickable):not(.disabled):before.focus, a:focus .bg:after.strong, a:focus .bg:after.focus, a:focus .bg:before.strong, a:focus .bg:before.focus, button:active:not(.unclickable):not(.disabled):after.strong, button:active:not(.unclickable):not(.disabled):after.focus, button:active:not(.unclickable):not(.disabled):before.strong, button:active:not(.unclickable):not(.disabled):before.focus, button:active .bg:after.strong, button:active .bg:after.focus, button:active .bg:before.strong, button:active .bg:before.focus, button.active:not(.unclickable):not(.disabled):after.strong, button.active:not(.unclickable):not(.disabled):after.focus, button.active:not(.unclickable):not(.disabled):before.strong, button.active:not(.unclickable):not(.disabled):before.focus, button.active .bg:after.strong, button.active .bg:after.focus, button.active .bg:before.strong, button.active .bg:before.focus, button:focus:not(.unclickable):not(.disabled):after.strong, button:focus:not(.unclickable):not(.disabled):after.focus, button:focus:not(.unclickable):not(.disabled):before.strong, button:focus:not(.unclickable):not(.disabled):before.focus, button:focus .bg:after.strong, button:focus .bg:after.focus, button:focus .bg:before.strong, button:focus .bg:before.focus, .button:active:not(.unclickable):not(.disabled):after.strong, .button:active:not(.unclickable):not(.disabled):after.focus, .button:active:not(.unclickable):not(.disabled):before.strong, .button:active:not(.unclickable):not(.disabled):before.focus, .button:active .bg:after.strong, .button:active .bg:after.focus, .button:active .bg:before.strong, .button:active .bg:before.focus, .button.active:not(.unclickable):not(.disabled):after.strong, .button.active:not(.unclickable):not(.disabled):after.focus, .button.active:not(.unclickable):not(.disabled):before.strong, .button.active:not(.unclickable):not(.disabled):before.focus, .button.active .bg:after.strong, .button.active .bg:after.focus, .button.active .bg:before.strong, .button.active .bg:before.focus, .button:focus:not(.unclickable):not(.disabled):after.strong, .button:focus:not(.unclickable):not(.disabled):after.focus, .button:focus:not(.unclickable):not(.disabled):before.strong, .button:focus:not(.unclickable):not(.disabled):before.focus, .button:focus .bg:after.strong, .button:focus .bg:after.focus, .button:focus .bg:before.strong, .button:focus .bg:before.focus {
+  border-color: var(--bg); }
+
+a.strong, a.focus, button.strong, button.focus, .button.strong, .button.focus {
+  color: var(--color-bright); }
+
+a.strong, a.focus, button.strong, button.focus, .button.strong, .button.focus {
+  border-color: var(--color-bright); }
+
+/* placeholder fade colors */
+*::placeholder {
+  color: var(--color-fade); }
+
+/* colors w. success, info, error, alert */
+ .new, .created, .create, .add {
+  color: var(--color-success); }
+
+ .new, .created, .create, .add {
+  border-color: var(--color-success); }
+
+ * .new, * .created, * .create, * .add {
+  border-color: var(--color-success); }
+
+ h1.new, h1.created, h1.create, h1.add {
+  color: var(--color-success); }
+
+ input.new, input.created, input.create, input.add, input[type=range].new, input[type=range].created, input[type=range].create, input[type=range].add {
+  color: var(--color-success); }
+
+ input[type=text]:focus.new, input[type=text]:focus.created, input[type=text]:focus.create, input[type=text]:focus.add, input[type=number]:focus.new, input[type=number]:focus.created, input[type=number]:focus.create, input[type=number]:focus.add, input[type=email]:focus.new, input[type=email]:focus.created, input[type=email]:focus.create, input[type=email]:focus.add {
+  box-shadow: 0px 0px 0px 1px var(--color-success) inset; }
+
+ input[type=range]:not([disabled]):active.new, input[type=range]:not([disabled]):active.created, input[type=range]:not([disabled]):active.create, input[type=range]:not([disabled]):active.add, input[type=range]:not([disabled]).active.new, input[type=range]:not([disabled]).active.created, input[type=range]:not([disabled]).active.create, input[type=range]:not([disabled]).active.add {
+  box-shadow: 0px 0px 0px 1px var(--color-success) inset; }
+
+ input[type=range].new::-webkit-slider-thumb, input[type=range].created::-webkit-slider-thumb, input[type=range].create::-webkit-slider-thumb, input[type=range].add::-webkit-slider-thumb {
+  background-color: var(--color-success); }
+
+ .fill.new, .fill.created, .fill.create, .fill.add {
+  fill: var(--color-success); }
+
+ .stroke.new, .stroke.created, .stroke.create, .stroke.add {
+  stroke: var(--color-success); }
+
+ button.new, button.created, button.create, button.add, .button.new, .button.created, .button.create, .button.add {
+  border-color: var(--color-success); }
+
+ button.new, button.created, button.create, button.add, .button.new, .button.created, .button.create, .button.add {
+  color: var(--color-success); }
+
+ .filled.new, .filled.created, .filled.create, .filled.add, button.filled.new, button.filled.created, button.filled.create, button.filled.add, .button.filled.new, .button.filled.created, .button.filled.create, .button.filled.add {
+  background: var(--color-success); }
+
+ .filled.new, .filled.created, .filled.create, .filled.add, button.filled.new, button.filled.created, button.filled.create, button.filled.add, .button.filled.new, .button.filled.created, .button.filled.create, .button.filled.add {
+  color: var(--bg); }
+
+ .filled .fill.new, .filled .fill.created, .filled .fill.create, .filled .fill.add, button.filled .fill.new, button.filled .fill.created, button.filled .fill.create, button.filled .fill.add, .button.filled .fill.new, .button.filled .fill.created, .button.filled .fill.create, .button.filled .fill.add {
+  fill: var(--bg); }
+
+ .filled .stroke.new, .filled .stroke.created, .filled .stroke.create, .filled .stroke.add, button.filled .stroke.new, button.filled .stroke.created, button.filled .stroke.create, button.filled .stroke.add, .button.filled .stroke.new, .button.filled .stroke.created, .button.filled .stroke.create, .button.filled .stroke.add {
+  stroke: var(--bg); }
+
+ .filled:after.new, .filled:after.created, .filled:after.create, .filled:after.add, .filled:before.new, .filled:before.created, .filled:before.create, .filled:before.add, button.filled:after.new, button.filled:after.created, button.filled:after.create, button.filled:after.add, button.filled:before.new, button.filled:before.created, button.filled:before.create, button.filled:before.add, .button.filled:after.new, .button.filled:after.created, .button.filled:after.create, .button.filled:after.add, .button.filled:before.new, .button.filled:before.created, .button.filled:before.create, .button.filled:before.add {
+  border-color: var(--bg); }
+
+ a:active:not(.unclickable):not(.disabled).new, a:active:not(.unclickable):not(.disabled).created, a:active:not(.unclickable):not(.disabled).create, a:active:not(.unclickable):not(.disabled).add, a:active .bg.new, a:active .bg.created, a:active .bg.create, a:active .bg.add, a.active:not(.unclickable):not(.disabled).new, a.active:not(.unclickable):not(.disabled).created, a.active:not(.unclickable):not(.disabled).create, a.active:not(.unclickable):not(.disabled).add, a.active .bg.new, a.active .bg.created, a.active .bg.create, a.active .bg.add, a:focus:not(.unclickable):not(.disabled).new, a:focus:not(.unclickable):not(.disabled).created, a:focus:not(.unclickable):not(.disabled).create, a:focus:not(.unclickable):not(.disabled).add, a:focus .bg.new, a:focus .bg.created, a:focus .bg.create, a:focus .bg.add, button:active:not(.unclickable):not(.disabled).new, button:active:not(.unclickable):not(.disabled).created, button:active:not(.unclickable):not(.disabled).create, button:active:not(.unclickable):not(.disabled).add, button:active .bg.new, button:active .bg.created, button:active .bg.create, button:active .bg.add, button.active:not(.unclickable):not(.disabled).new, button.active:not(.unclickable):not(.disabled).created, button.active:not(.unclickable):not(.disabled).create, button.active:not(.unclickable):not(.disabled).add, button.active .bg.new, button.active .bg.created, button.active .bg.create, button.active .bg.add, button:focus:not(.unclickable):not(.disabled).new, button:focus:not(.unclickable):not(.disabled).created, button:focus:not(.unclickable):not(.disabled).create, button:focus:not(.unclickable):not(.disabled).add, button:focus .bg.new, button:focus .bg.created, button:focus .bg.create, button:focus .bg.add, .button:active:not(.unclickable):not(.disabled).new, .button:active:not(.unclickable):not(.disabled).created, .button:active:not(.unclickable):not(.disabled).create, .button:active:not(.unclickable):not(.disabled).add, .button:active .bg.new, .button:active .bg.created, .button:active .bg.create, .button:active .bg.add, .button.active:not(.unclickable):not(.disabled).new, .button.active:not(.unclickable):not(.disabled).created, .button.active:not(.unclickable):not(.disabled).create, .button.active:not(.unclickable):not(.disabled).add, .button.active .bg.new, .button.active .bg.created, .button.active .bg.create, .button.active .bg.add, .button:focus:not(.unclickable):not(.disabled).new, .button:focus:not(.unclickable):not(.disabled).created, .button:focus:not(.unclickable):not(.disabled).create, .button:focus:not(.unclickable):not(.disabled).add, .button:focus .bg.new, .button:focus .bg.created, .button:focus .bg.create, .button:focus .bg.add {
+  background: var(--color-success); }
+
+ a:active:not(.unclickable):not(.disabled).new, a:active:not(.unclickable):not(.disabled).created, a:active:not(.unclickable):not(.disabled).create, a:active:not(.unclickable):not(.disabled).add, a:active .bg.new, a:active .bg.created, a:active .bg.create, a:active .bg.add, a.active:not(.unclickable):not(.disabled).new, a.active:not(.unclickable):not(.disabled).created, a.active:not(.unclickable):not(.disabled).create, a.active:not(.unclickable):not(.disabled).add, a.active .bg.new, a.active .bg.created, a.active .bg.create, a.active .bg.add, a:focus:not(.unclickable):not(.disabled).new, a:focus:not(.unclickable):not(.disabled).created, a:focus:not(.unclickable):not(.disabled).create, a:focus:not(.unclickable):not(.disabled).add, a:focus .bg.new, a:focus .bg.created, a:focus .bg.create, a:focus .bg.add, button:active:not(.unclickable):not(.disabled).new, button:active:not(.unclickable):not(.disabled).created, button:active:not(.unclickable):not(.disabled).create, button:active:not(.unclickable):not(.disabled).add, button:active .bg.new, button:active .bg.created, button:active .bg.create, button:active .bg.add, button.active:not(.unclickable):not(.disabled).new, button.active:not(.unclickable):not(.disabled).created, button.active:not(.unclickable):not(.disabled).create, button.active:not(.unclickable):not(.disabled).add, button.active .bg.new, button.active .bg.created, button.active .bg.create, button.active .bg.add, button:focus:not(.unclickable):not(.disabled).new, button:focus:not(.unclickable):not(.disabled).created, button:focus:not(.unclickable):not(.disabled).create, button:focus:not(.unclickable):not(.disabled).add, button:focus .bg.new, button:focus .bg.created, button:focus .bg.create, button:focus .bg.add, .button:active:not(.unclickable):not(.disabled).new, .button:active:not(.unclickable):not(.disabled).created, .button:active:not(.unclickable):not(.disabled).create, .button:active:not(.unclickable):not(.disabled).add, .button:active .bg.new, .button:active .bg.created, .button:active .bg.create, .button:active .bg.add, .button.active:not(.unclickable):not(.disabled).new, .button.active:not(.unclickable):not(.disabled).created, .button.active:not(.unclickable):not(.disabled).create, .button.active:not(.unclickable):not(.disabled).add, .button.active .bg.new, .button.active .bg.created, .button.active .bg.create, .button.active .bg.add, .button:focus:not(.unclickable):not(.disabled).new, .button:focus:not(.unclickable):not(.disabled).created, .button:focus:not(.unclickable):not(.disabled).create, .button:focus:not(.unclickable):not(.disabled).add, .button:focus .bg.new, .button:focus .bg.created, .button:focus .bg.create, .button:focus .bg.add {
+  color: var(--bg); }
+
+ a:active:not(.unclickable):not(.disabled) .fill.new, a:active:not(.unclickable):not(.disabled) .fill.created, a:active:not(.unclickable):not(.disabled) .fill.create, a:active:not(.unclickable):not(.disabled) .fill.add, a:active .bg .fill.new, a:active .bg .fill.created, a:active .bg .fill.create, a:active .bg .fill.add, a.active:not(.unclickable):not(.disabled) .fill.new, a.active:not(.unclickable):not(.disabled) .fill.created, a.active:not(.unclickable):not(.disabled) .fill.create, a.active:not(.unclickable):not(.disabled) .fill.add, a.active .bg .fill.new, a.active .bg .fill.created, a.active .bg .fill.create, a.active .bg .fill.add, a:focus:not(.unclickable):not(.disabled) .fill.new, a:focus:not(.unclickable):not(.disabled) .fill.created, a:focus:not(.unclickable):not(.disabled) .fill.create, a:focus:not(.unclickable):not(.disabled) .fill.add, a:focus .bg .fill.new, a:focus .bg .fill.created, a:focus .bg .fill.create, a:focus .bg .fill.add, button:active:not(.unclickable):not(.disabled) .fill.new, button:active:not(.unclickable):not(.disabled) .fill.created, button:active:not(.unclickable):not(.disabled) .fill.create, button:active:not(.unclickable):not(.disabled) .fill.add, button:active .bg .fill.new, button:active .bg .fill.created, button:active .bg .fill.create, button:active .bg .fill.add, button.active:not(.unclickable):not(.disabled) .fill.new, button.active:not(.unclickable):not(.disabled) .fill.created, button.active:not(.unclickable):not(.disabled) .fill.create, button.active:not(.unclickable):not(.disabled) .fill.add, button.active .bg .fill.new, button.active .bg .fill.created, button.active .bg .fill.create, button.active .bg .fill.add, button:focus:not(.unclickable):not(.disabled) .fill.new, button:focus:not(.unclickable):not(.disabled) .fill.created, button:focus:not(.unclickable):not(.disabled) .fill.create, button:focus:not(.unclickable):not(.disabled) .fill.add, button:focus .bg .fill.new, button:focus .bg .fill.created, button:focus .bg .fill.create, button:focus .bg .fill.add, .button:active:not(.unclickable):not(.disabled) .fill.new, .button:active:not(.unclickable):not(.disabled) .fill.created, .button:active:not(.unclickable):not(.disabled) .fill.create, .button:active:not(.unclickable):not(.disabled) .fill.add, .button:active .bg .fill.new, .button:active .bg .fill.created, .button:active .bg .fill.create, .button:active .bg .fill.add, .button.active:not(.unclickable):not(.disabled) .fill.new, .button.active:not(.unclickable):not(.disabled) .fill.created, .button.active:not(.unclickable):not(.disabled) .fill.create, .button.active:not(.unclickable):not(.disabled) .fill.add, .button.active .bg .fill.new, .button.active .bg .fill.created, .button.active .bg .fill.create, .button.active .bg .fill.add, .button:focus:not(.unclickable):not(.disabled) .fill.new, .button:focus:not(.unclickable):not(.disabled) .fill.created, .button:focus:not(.unclickable):not(.disabled) .fill.create, .button:focus:not(.unclickable):not(.disabled) .fill.add, .button:focus .bg .fill.new, .button:focus .bg .fill.created, .button:focus .bg .fill.create, .button:focus .bg .fill.add {
+  fill: var(--bg); }
+
+ a:active:not(.unclickable):not(.disabled) .stroke.new, a:active:not(.unclickable):not(.disabled) .stroke.created, a:active:not(.unclickable):not(.disabled) .stroke.create, a:active:not(.unclickable):not(.disabled) .stroke.add, a:active .bg .stroke.new, a:active .bg .stroke.created, a:active .bg .stroke.create, a:active .bg .stroke.add, a.active:not(.unclickable):not(.disabled) .stroke.new, a.active:not(.unclickable):not(.disabled) .stroke.created, a.active:not(.unclickable):not(.disabled) .stroke.create, a.active:not(.unclickable):not(.disabled) .stroke.add, a.active .bg .stroke.new, a.active .bg .stroke.created, a.active .bg .stroke.create, a.active .bg .stroke.add, a:focus:not(.unclickable):not(.disabled) .stroke.new, a:focus:not(.unclickable):not(.disabled) .stroke.created, a:focus:not(.unclickable):not(.disabled) .stroke.create, a:focus:not(.unclickable):not(.disabled) .stroke.add, a:focus .bg .stroke.new, a:focus .bg .stroke.created, a:focus .bg .stroke.create, a:focus .bg .stroke.add, button:active:not(.unclickable):not(.disabled) .stroke.new, button:active:not(.unclickable):not(.disabled) .stroke.created, button:active:not(.unclickable):not(.disabled) .stroke.create, button:active:not(.unclickable):not(.disabled) .stroke.add, button:active .bg .stroke.new, button:active .bg .stroke.created, button:active .bg .stroke.create, button:active .bg .stroke.add, button.active:not(.unclickable):not(.disabled) .stroke.new, button.active:not(.unclickable):not(.disabled) .stroke.created, button.active:not(.unclickable):not(.disabled) .stroke.create, button.active:not(.unclickable):not(.disabled) .stroke.add, button.active .bg .stroke.new, button.active .bg .stroke.created, button.active .bg .stroke.create, button.active .bg .stroke.add, button:focus:not(.unclickable):not(.disabled) .stroke.new, button:focus:not(.unclickable):not(.disabled) .stroke.created, button:focus:not(.unclickable):not(.disabled) .stroke.create, button:focus:not(.unclickable):not(.disabled) .stroke.add, button:focus .bg .stroke.new, button:focus .bg .stroke.created, button:focus .bg .stroke.create, button:focus .bg .stroke.add, .button:active:not(.unclickable):not(.disabled) .stroke.new, .button:active:not(.unclickable):not(.disabled) .stroke.created, .button:active:not(.unclickable):not(.disabled) .stroke.create, .button:active:not(.unclickable):not(.disabled) .stroke.add, .button:active .bg .stroke.new, .button:active .bg .stroke.created, .button:active .bg .stroke.create, .button:active .bg .stroke.add, .button.active:not(.unclickable):not(.disabled) .stroke.new, .button.active:not(.unclickable):not(.disabled) .stroke.created, .button.active:not(.unclickable):not(.disabled) .stroke.create, .button.active:not(.unclickable):not(.disabled) .stroke.add, .button.active .bg .stroke.new, .button.active .bg .stroke.created, .button.active .bg .stroke.create, .button.active .bg .stroke.add, .button:focus:not(.unclickable):not(.disabled) .stroke.new, .button:focus:not(.unclickable):not(.disabled) .stroke.created, .button:focus:not(.unclickable):not(.disabled) .stroke.create, .button:focus:not(.unclickable):not(.disabled) .stroke.add, .button:focus .bg .stroke.new, .button:focus .bg .stroke.created, .button:focus .bg .stroke.create, .button:focus .bg .stroke.add {
+  stroke: var(--bg); }
+
+ a:active:not(.unclickable):not(.disabled):after.new, a:active:not(.unclickable):not(.disabled):after.created, a:active:not(.unclickable):not(.disabled):after.create, a:active:not(.unclickable):not(.disabled):after.add, a:active:not(.unclickable):not(.disabled):before.new, a:active:not(.unclickable):not(.disabled):before.created, a:active:not(.unclickable):not(.disabled):before.create, a:active:not(.unclickable):not(.disabled):before.add, a:active .bg:after.new, a:active .bg:after.created, a:active .bg:after.create, a:active .bg:after.add, a:active .bg:before.new, a:active .bg:before.created, a:active .bg:before.create, a:active .bg:before.add, a.active:not(.unclickable):not(.disabled):after.new, a.active:not(.unclickable):not(.disabled):after.created, a.active:not(.unclickable):not(.disabled):after.create, a.active:not(.unclickable):not(.disabled):after.add, a.active:not(.unclickable):not(.disabled):before.new, a.active:not(.unclickable):not(.disabled):before.created, a.active:not(.unclickable):not(.disabled):before.create, a.active:not(.unclickable):not(.disabled):before.add, a.active .bg:after.new, a.active .bg:after.created, a.active .bg:after.create, a.active .bg:after.add, a.active .bg:before.new, a.active .bg:before.created, a.active .bg:before.create, a.active .bg:before.add, a:focus:not(.unclickable):not(.disabled):after.new, a:focus:not(.unclickable):not(.disabled):after.created, a:focus:not(.unclickable):not(.disabled):after.create, a:focus:not(.unclickable):not(.disabled):after.add, a:focus:not(.unclickable):not(.disabled):before.new, a:focus:not(.unclickable):not(.disabled):before.created, a:focus:not(.unclickable):not(.disabled):before.create, a:focus:not(.unclickable):not(.disabled):before.add, a:focus .bg:after.new, a:focus .bg:after.created, a:focus .bg:after.create, a:focus .bg:after.add, a:focus .bg:before.new, a:focus .bg:before.created, a:focus .bg:before.create, a:focus .bg:before.add, button:active:not(.unclickable):not(.disabled):after.new, button:active:not(.unclickable):not(.disabled):after.created, button:active:not(.unclickable):not(.disabled):after.create, button:active:not(.unclickable):not(.disabled):after.add, button:active:not(.unclickable):not(.disabled):before.new, button:active:not(.unclickable):not(.disabled):before.created, button:active:not(.unclickable):not(.disabled):before.create, button:active:not(.unclickable):not(.disabled):before.add, button:active .bg:after.new, button:active .bg:after.created, button:active .bg:after.create, button:active .bg:after.add, button:active .bg:before.new, button:active .bg:before.created, button:active .bg:before.create, button:active .bg:before.add, button.active:not(.unclickable):not(.disabled):after.new, button.active:not(.unclickable):not(.disabled):after.created, button.active:not(.unclickable):not(.disabled):after.create, button.active:not(.unclickable):not(.disabled):after.add, button.active:not(.unclickable):not(.disabled):before.new, button.active:not(.unclickable):not(.disabled):before.created, button.active:not(.unclickable):not(.disabled):before.create, button.active:not(.unclickable):not(.disabled):before.add, button.active .bg:after.new, button.active .bg:after.created, button.active .bg:after.create, button.active .bg:after.add, button.active .bg:before.new, button.active .bg:before.created, button.active .bg:before.create, button.active .bg:before.add, button:focus:not(.unclickable):not(.disabled):after.new, button:focus:not(.unclickable):not(.disabled):after.created, button:focus:not(.unclickable):not(.disabled):after.create, button:focus:not(.unclickable):not(.disabled):after.add, button:focus:not(.unclickable):not(.disabled):before.new, button:focus:not(.unclickable):not(.disabled):before.created, button:focus:not(.unclickable):not(.disabled):before.create, button:focus:not(.unclickable):not(.disabled):before.add, button:focus .bg:after.new, button:focus .bg:after.created, button:focus .bg:after.create, button:focus .bg:after.add, button:focus .bg:before.new, button:focus .bg:before.created, button:focus .bg:before.create, button:focus .bg:before.add, .button:active:not(.unclickable):not(.disabled):after.new, .button:active:not(.unclickable):not(.disabled):after.created, .button:active:not(.unclickable):not(.disabled):after.create, .button:active:not(.unclickable):not(.disabled):after.add, .button:active:not(.unclickable):not(.disabled):before.new, .button:active:not(.unclickable):not(.disabled):before.created, .button:active:not(.unclickable):not(.disabled):before.create, .button:active:not(.unclickable):not(.disabled):before.add, .button:active .bg:after.new, .button:active .bg:after.created, .button:active .bg:after.create, .button:active .bg:after.add, .button:active .bg:before.new, .button:active .bg:before.created, .button:active .bg:before.create, .button:active .bg:before.add, .button.active:not(.unclickable):not(.disabled):after.new, .button.active:not(.unclickable):not(.disabled):after.created, .button.active:not(.unclickable):not(.disabled):after.create, .button.active:not(.unclickable):not(.disabled):after.add, .button.active:not(.unclickable):not(.disabled):before.new, .button.active:not(.unclickable):not(.disabled):before.created, .button.active:not(.unclickable):not(.disabled):before.create, .button.active:not(.unclickable):not(.disabled):before.add, .button.active .bg:after.new, .button.active .bg:after.created, .button.active .bg:after.create, .button.active .bg:after.add, .button.active .bg:before.new, .button.active .bg:before.created, .button.active .bg:before.create, .button.active .bg:before.add, .button:focus:not(.unclickable):not(.disabled):after.new, .button:focus:not(.unclickable):not(.disabled):after.created, .button:focus:not(.unclickable):not(.disabled):after.create, .button:focus:not(.unclickable):not(.disabled):after.add, .button:focus:not(.unclickable):not(.disabled):before.new, .button:focus:not(.unclickable):not(.disabled):before.created, .button:focus:not(.unclickable):not(.disabled):before.create, .button:focus:not(.unclickable):not(.disabled):before.add, .button:focus .bg:after.new, .button:focus .bg:after.created, .button:focus .bg:after.create, .button:focus .bg:after.add, .button:focus .bg:before.new, .button:focus .bg:before.created, .button:focus .bg:before.create, .button:focus .bg:before.add {
+  border-color: var(--bg); }
+
+ a.new, a.created, a.create, a.add, button.new, button.created, button.create, button.add, .button.new, .button.created, .button.create, .button.add {
+  color: var(--color-success); }
+
+ a.new, a.created, a.create, a.add, button.new, button.created, button.create, button.add, .button.new, .button.created, .button.create, .button.add {
+  border-color: var(--color-success); }
+
+.info {
+  color: var(--color-info); }
+
+.info {
+  border-color: var(--color-info); }
+
+* .info {
+  border-color: var(--color-info); }
+
+h1.info {
+  color: var(--color-info); }
+
+input.info, input[type=range].info {
+  color: var(--color-info); }
+
+ input[type=text]:focus.info, input[type=number]:focus.info, input[type=email]:focus.info {
+  box-shadow: 0px 0px 0px 1px var(--color-info) inset; }
+
+input[type=range]:not([disabled]):active.info, input[type=range]:not([disabled]).active.info {
+  box-shadow: 0px 0px 0px 1px var(--color-info) inset; }
+
+input[type=range].info::-webkit-slider-thumb {
+  background-color: var(--color-info); }
+
+.fill.info {
+  fill: var(--color-info); }
+
+.stroke.info {
+  stroke: var(--color-info); }
+
+button.info, .button.info {
+  border-color: var(--color-info); }
+
+button.info, .button.info {
+  color: var(--color-info); }
+
+.filled.info, button.filled.info, .button.filled.info {
+  background: var(--color-info); }
+
+.filled.info, button.filled.info, .button.filled.info {
+  color: var(--bg); }
+
+.filled .fill.info, button.filled .fill.info, .button.filled .fill.info {
+  fill: var(--bg); }
+
+.filled .stroke.info, button.filled .stroke.info, .button.filled .stroke.info {
+  stroke: var(--bg); }
+
+.filled:after.info, .filled:before.info, button.filled:after.info, button.filled:before.info, .button.filled:after.info, .button.filled:before.info {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).info, a:active .bg.info, a.active:not(.unclickable):not(.disabled).info, a.active .bg.info, a:focus:not(.unclickable):not(.disabled).info, a:focus .bg.info, button:active:not(.unclickable):not(.disabled).info, button:active .bg.info, button.active:not(.unclickable):not(.disabled).info, button.active .bg.info, button:focus:not(.unclickable):not(.disabled).info, button:focus .bg.info, .button:active:not(.unclickable):not(.disabled).info, .button:active .bg.info, .button.active:not(.unclickable):not(.disabled).info, .button.active .bg.info, .button:focus:not(.unclickable):not(.disabled).info, .button:focus .bg.info {
+  background: var(--color-info); }
+
+a:active:not(.unclickable):not(.disabled).info, a:active .bg.info, a.active:not(.unclickable):not(.disabled).info, a.active .bg.info, a:focus:not(.unclickable):not(.disabled).info, a:focus .bg.info, button:active:not(.unclickable):not(.disabled).info, button:active .bg.info, button.active:not(.unclickable):not(.disabled).info, button.active .bg.info, button:focus:not(.unclickable):not(.disabled).info, button:focus .bg.info, .button:active:not(.unclickable):not(.disabled).info, .button:active .bg.info, .button.active:not(.unclickable):not(.disabled).info, .button.active .bg.info, .button:focus:not(.unclickable):not(.disabled).info, .button:focus .bg.info {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.info, a:active .bg .fill.info, a.active:not(.unclickable):not(.disabled) .fill.info, a.active .bg .fill.info, a:focus:not(.unclickable):not(.disabled) .fill.info, a:focus .bg .fill.info, button:active:not(.unclickable):not(.disabled) .fill.info, button:active .bg .fill.info, button.active:not(.unclickable):not(.disabled) .fill.info, button.active .bg .fill.info, button:focus:not(.unclickable):not(.disabled) .fill.info, button:focus .bg .fill.info, .button:active:not(.unclickable):not(.disabled) .fill.info, .button:active .bg .fill.info, .button.active:not(.unclickable):not(.disabled) .fill.info, .button.active .bg .fill.info, .button:focus:not(.unclickable):not(.disabled) .fill.info, .button:focus .bg .fill.info {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.info, a:active .bg .stroke.info, a.active:not(.unclickable):not(.disabled) .stroke.info, a.active .bg .stroke.info, a:focus:not(.unclickable):not(.disabled) .stroke.info, a:focus .bg .stroke.info, button:active:not(.unclickable):not(.disabled) .stroke.info, button:active .bg .stroke.info, button.active:not(.unclickable):not(.disabled) .stroke.info, button.active .bg .stroke.info, button:focus:not(.unclickable):not(.disabled) .stroke.info, button:focus .bg .stroke.info, .button:active:not(.unclickable):not(.disabled) .stroke.info, .button:active .bg .stroke.info, .button.active:not(.unclickable):not(.disabled) .stroke.info, .button.active .bg .stroke.info, .button:focus:not(.unclickable):not(.disabled) .stroke.info, .button:focus .bg .stroke.info {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.info, a:active:not(.unclickable):not(.disabled):before.info, a:active .bg:after.info, a:active .bg:before.info, a.active:not(.unclickable):not(.disabled):after.info, a.active:not(.unclickable):not(.disabled):before.info, a.active .bg:after.info, a.active .bg:before.info, a:focus:not(.unclickable):not(.disabled):after.info, a:focus:not(.unclickable):not(.disabled):before.info, a:focus .bg:after.info, a:focus .bg:before.info, button:active:not(.unclickable):not(.disabled):after.info, button:active:not(.unclickable):not(.disabled):before.info, button:active .bg:after.info, button:active .bg:before.info, button.active:not(.unclickable):not(.disabled):after.info, button.active:not(.unclickable):not(.disabled):before.info, button.active .bg:after.info, button.active .bg:before.info, button:focus:not(.unclickable):not(.disabled):after.info, button:focus:not(.unclickable):not(.disabled):before.info, button:focus .bg:after.info, button:focus .bg:before.info, .button:active:not(.unclickable):not(.disabled):after.info, .button:active:not(.unclickable):not(.disabled):before.info, .button:active .bg:after.info, .button:active .bg:before.info, .button.active:not(.unclickable):not(.disabled):after.info, .button.active:not(.unclickable):not(.disabled):before.info, .button.active .bg:after.info, .button.active .bg:before.info, .button:focus:not(.unclickable):not(.disabled):after.info, .button:focus:not(.unclickable):not(.disabled):before.info, .button:focus .bg:after.info, .button:focus .bg:before.info {
+  border-color: var(--bg); }
+
+a.info, button.info, .button.info {
+  color: var(--color-info); }
+
+a.info, button.info, .button.info {
+  border-color: var(--color-info); }
+
+.error {
+  color: var(--color-error); }
+
+.error {
+  border-color: var(--color-error); }
+
+* .error {
+  border-color: var(--color-error); }
+
+h1.error {
+  color: var(--color-error); }
+
+input.error, input[type=range].error {
+  color: var(--color-error); }
+
+ input[type=text]:focus.error, input[type=number]:focus.error, input[type=email]:focus.error {
+  box-shadow: 0px 0px 0px 1px var(--color-error) inset; }
+
+input[type=range]:not([disabled]):active.error, input[type=range]:not([disabled]).active.error {
+  box-shadow: 0px 0px 0px 1px var(--color-error) inset; }
+
+input[type=range].error::-webkit-slider-thumb {
+  background-color: var(--color-error); }
+
+.fill.error {
+  fill: var(--color-error); }
+
+.stroke.error {
+  stroke: var(--color-error); }
+
+button.error, .button.error {
+  border-color: var(--color-error); }
+
+button.error, .button.error {
+  color: var(--color-error); }
+
+.filled.error, button.filled.error, .button.filled.error {
+  background: var(--color-error); }
+
+.filled.error, button.filled.error, .button.filled.error {
+  color: var(--bg); }
+
+.filled .fill.error, button.filled .fill.error, .button.filled .fill.error {
+  fill: var(--bg); }
+
+.filled .stroke.error, button.filled .stroke.error, .button.filled .stroke.error {
+  stroke: var(--bg); }
+
+.filled:after.error, .filled:before.error, button.filled:after.error, button.filled:before.error, .button.filled:after.error, .button.filled:before.error {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).error, a:active .bg.error, a.active:not(.unclickable):not(.disabled).error, a.active .bg.error, a:focus:not(.unclickable):not(.disabled).error, a:focus .bg.error, button:active:not(.unclickable):not(.disabled).error, button:active .bg.error, button.active:not(.unclickable):not(.disabled).error, button.active .bg.error, button:focus:not(.unclickable):not(.disabled).error, button:focus .bg.error, .button:active:not(.unclickable):not(.disabled).error, .button:active .bg.error, .button.active:not(.unclickable):not(.disabled).error, .button.active .bg.error, .button:focus:not(.unclickable):not(.disabled).error, .button:focus .bg.error {
+  background: var(--color-error); }
+
+a:active:not(.unclickable):not(.disabled).error, a:active .bg.error, a.active:not(.unclickable):not(.disabled).error, a.active .bg.error, a:focus:not(.unclickable):not(.disabled).error, a:focus .bg.error, button:active:not(.unclickable):not(.disabled).error, button:active .bg.error, button.active:not(.unclickable):not(.disabled).error, button.active .bg.error, button:focus:not(.unclickable):not(.disabled).error, button:focus .bg.error, .button:active:not(.unclickable):not(.disabled).error, .button:active .bg.error, .button.active:not(.unclickable):not(.disabled).error, .button.active .bg.error, .button:focus:not(.unclickable):not(.disabled).error, .button:focus .bg.error {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.error, a:active .bg .fill.error, a.active:not(.unclickable):not(.disabled) .fill.error, a.active .bg .fill.error, a:focus:not(.unclickable):not(.disabled) .fill.error, a:focus .bg .fill.error, button:active:not(.unclickable):not(.disabled) .fill.error, button:active .bg .fill.error, button.active:not(.unclickable):not(.disabled) .fill.error, button.active .bg .fill.error, button:focus:not(.unclickable):not(.disabled) .fill.error, button:focus .bg .fill.error, .button:active:not(.unclickable):not(.disabled) .fill.error, .button:active .bg .fill.error, .button.active:not(.unclickable):not(.disabled) .fill.error, .button.active .bg .fill.error, .button:focus:not(.unclickable):not(.disabled) .fill.error, .button:focus .bg .fill.error {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.error, a:active .bg .stroke.error, a.active:not(.unclickable):not(.disabled) .stroke.error, a.active .bg .stroke.error, a:focus:not(.unclickable):not(.disabled) .stroke.error, a:focus .bg .stroke.error, button:active:not(.unclickable):not(.disabled) .stroke.error, button:active .bg .stroke.error, button.active:not(.unclickable):not(.disabled) .stroke.error, button.active .bg .stroke.error, button:focus:not(.unclickable):not(.disabled) .stroke.error, button:focus .bg .stroke.error, .button:active:not(.unclickable):not(.disabled) .stroke.error, .button:active .bg .stroke.error, .button.active:not(.unclickable):not(.disabled) .stroke.error, .button.active .bg .stroke.error, .button:focus:not(.unclickable):not(.disabled) .stroke.error, .button:focus .bg .stroke.error {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.error, a:active:not(.unclickable):not(.disabled):before.error, a:active .bg:after.error, a:active .bg:before.error, a.active:not(.unclickable):not(.disabled):after.error, a.active:not(.unclickable):not(.disabled):before.error, a.active .bg:after.error, a.active .bg:before.error, a:focus:not(.unclickable):not(.disabled):after.error, a:focus:not(.unclickable):not(.disabled):before.error, a:focus .bg:after.error, a:focus .bg:before.error, button:active:not(.unclickable):not(.disabled):after.error, button:active:not(.unclickable):not(.disabled):before.error, button:active .bg:after.error, button:active .bg:before.error, button.active:not(.unclickable):not(.disabled):after.error, button.active:not(.unclickable):not(.disabled):before.error, button.active .bg:after.error, button.active .bg:before.error, button:focus:not(.unclickable):not(.disabled):after.error, button:focus:not(.unclickable):not(.disabled):before.error, button:focus .bg:after.error, button:focus .bg:before.error, .button:active:not(.unclickable):not(.disabled):after.error, .button:active:not(.unclickable):not(.disabled):before.error, .button:active .bg:after.error, .button:active .bg:before.error, .button.active:not(.unclickable):not(.disabled):after.error, .button.active:not(.unclickable):not(.disabled):before.error, .button.active .bg:after.error, .button.active .bg:before.error, .button:focus:not(.unclickable):not(.disabled):after.error, .button:focus:not(.unclickable):not(.disabled):before.error, .button:focus .bg:after.error, .button:focus .bg:before.error {
+  border-color: var(--bg); }
+
+a.error, button.error, .button.error {
+  color: var(--color-error); }
+
+a.error, button.error, .button.error {
+  border-color: var(--color-error); }
+
+/* background and colors w. a, b, c, d, e */
+
+.color-a {
+  color: var(--color-a); }
+
+.color-a {
+  border-color: var(--color-a); }
+
+* .color-a {
+  border-color: var(--color-a); }
+
+h1.color-a {
+  color: var(--color-a); }
+
+input.color-a, input[type=range].color-a {
+  color: var(--color-a); }
+
+ input[type=text]:focus.color-a, input[type=number]:focus.color-a, input[type=email]:focus.color-a {
+  box-shadow: 0px 0px 0px 1px var(--color-a) inset; }
+
+input[type=range]:not([disabled]):active.color-a, input[type=range]:not([disabled]).active.color-a {
+  box-shadow: 0px 0px 0px 1px var(--color-a) inset; }
+
+input[type=range].color-a::-webkit-slider-thumb {
+  background-color: var(--color-a); }
+
+.fill.color-a {
+  fill: var(--color-a); }
+
+.stroke.color-a {
+  stroke: var(--color-a); }
+
+button.color-a, .button.color-a {
+  border-color: var(--color-a); }
+
+button.color-a, .button.color-a {
+  color: var(--color-a); }
+
+.filled.color-a, button.filled.color-a, .button.filled.color-a {
+  background: var(--color-a); }
+
+.filled.color-a, button.filled.color-a, .button.filled.color-a {
+  color: var(--bg); }
+
+.filled .fill.color-a, button.filled .fill.color-a, .button.filled .fill.color-a {
+  fill: var(--bg); }
+
+.filled .stroke.color-a, button.filled .stroke.color-a, .button.filled .stroke.color-a {
+  stroke: var(--bg); }
+
+.filled:after.color-a, .filled:before.color-a, button.filled:after.color-a, button.filled:before.color-a, .button.filled:after.color-a, .button.filled:before.color-a {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).color-a, a:active .bg.color-a, a.active:not(.unclickable):not(.disabled).color-a, a.active .bg.color-a, a:focus:not(.unclickable):not(.disabled).color-a, a:focus .bg.color-a, button:active:not(.unclickable):not(.disabled).color-a, button:active .bg.color-a, button.active:not(.unclickable):not(.disabled).color-a, button.active .bg.color-a, button:focus:not(.unclickable):not(.disabled).color-a, button:focus .bg.color-a, .button:active:not(.unclickable):not(.disabled).color-a, .button:active .bg.color-a, .button.active:not(.unclickable):not(.disabled).color-a, .button.active .bg.color-a, .button:focus:not(.unclickable):not(.disabled).color-a, .button:focus .bg.color-a {
+  background: var(--color-a); }
+
+a:active:not(.unclickable):not(.disabled).color-a, a:active .bg.color-a, a.active:not(.unclickable):not(.disabled).color-a, a.active .bg.color-a, a:focus:not(.unclickable):not(.disabled).color-a, a:focus .bg.color-a, button:active:not(.unclickable):not(.disabled).color-a, button:active .bg.color-a, button.active:not(.unclickable):not(.disabled).color-a, button.active .bg.color-a, button:focus:not(.unclickable):not(.disabled).color-a, button:focus .bg.color-a, .button:active:not(.unclickable):not(.disabled).color-a, .button:active .bg.color-a, .button.active:not(.unclickable):not(.disabled).color-a, .button.active .bg.color-a, .button:focus:not(.unclickable):not(.disabled).color-a, .button:focus .bg.color-a {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.color-a, a:active .bg .fill.color-a, a.active:not(.unclickable):not(.disabled) .fill.color-a, a.active .bg .fill.color-a, a:focus:not(.unclickable):not(.disabled) .fill.color-a, a:focus .bg .fill.color-a, button:active:not(.unclickable):not(.disabled) .fill.color-a, button:active .bg .fill.color-a, button.active:not(.unclickable):not(.disabled) .fill.color-a, button.active .bg .fill.color-a, button:focus:not(.unclickable):not(.disabled) .fill.color-a, button:focus .bg .fill.color-a, .button:active:not(.unclickable):not(.disabled) .fill.color-a, .button:active .bg .fill.color-a, .button.active:not(.unclickable):not(.disabled) .fill.color-a, .button.active .bg .fill.color-a, .button:focus:not(.unclickable):not(.disabled) .fill.color-a, .button:focus .bg .fill.color-a {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.color-a, a:active .bg .stroke.color-a, a.active:not(.unclickable):not(.disabled) .stroke.color-a, a.active .bg .stroke.color-a, a:focus:not(.unclickable):not(.disabled) .stroke.color-a, a:focus .bg .stroke.color-a, button:active:not(.unclickable):not(.disabled) .stroke.color-a, button:active .bg .stroke.color-a, button.active:not(.unclickable):not(.disabled) .stroke.color-a, button.active .bg .stroke.color-a, button:focus:not(.unclickable):not(.disabled) .stroke.color-a, button:focus .bg .stroke.color-a, .button:active:not(.unclickable):not(.disabled) .stroke.color-a, .button:active .bg .stroke.color-a, .button.active:not(.unclickable):not(.disabled) .stroke.color-a, .button.active .bg .stroke.color-a, .button:focus:not(.unclickable):not(.disabled) .stroke.color-a, .button:focus .bg .stroke.color-a {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.color-a, a:active:not(.unclickable):not(.disabled):before.color-a, a:active .bg:after.color-a, a:active .bg:before.color-a, a.active:not(.unclickable):not(.disabled):after.color-a, a.active:not(.unclickable):not(.disabled):before.color-a, a.active .bg:after.color-a, a.active .bg:before.color-a, a:focus:not(.unclickable):not(.disabled):after.color-a, a:focus:not(.unclickable):not(.disabled):before.color-a, a:focus .bg:after.color-a, a:focus .bg:before.color-a, button:active:not(.unclickable):not(.disabled):after.color-a, button:active:not(.unclickable):not(.disabled):before.color-a, button:active .bg:after.color-a, button:active .bg:before.color-a, button.active:not(.unclickable):not(.disabled):after.color-a, button.active:not(.unclickable):not(.disabled):before.color-a, button.active .bg:after.color-a, button.active .bg:before.color-a, button:focus:not(.unclickable):not(.disabled):after.color-a, button:focus:not(.unclickable):not(.disabled):before.color-a, button:focus .bg:after.color-a, button:focus .bg:before.color-a, .button:active:not(.unclickable):not(.disabled):after.color-a, .button:active:not(.unclickable):not(.disabled):before.color-a, .button:active .bg:after.color-a, .button:active .bg:before.color-a, .button.active:not(.unclickable):not(.disabled):after.color-a, .button.active:not(.unclickable):not(.disabled):before.color-a, .button.active .bg:after.color-a, .button.active .bg:before.color-a, .button:focus:not(.unclickable):not(.disabled):after.color-a, .button:focus:not(.unclickable):not(.disabled):before.color-a, .button:focus .bg:after.color-a, .button:focus .bg:before.color-a {
+  border-color: var(--bg); }
+
+a.color-a, button.color-a, .button.color-a {
+  color: var(--color-a); }
+
+a.color-a, button.color-a, .button.color-a {
+  border-color: var(--color-a); }
+
+.color-b {
+  color: var(--color-b); }
+
+.color-b {
+  border-color: var(--color-b); }
+
+* .color-b {
+  border-color: var(--color-b); }
+
+h1.color-b {
+  color: var(--color-b); }
+
+input.color-b, input[type=range].color-b {
+  color: var(--color-b); }
+
+ input[type=text]:focus.color-b, input[type=number]:focus.color-b, input[type=email]:focus.color-b {
+  box-shadow: 0px 0px 0px 1px var(--color-b) inset; }
+
+input[type=range]:not([disabled]):active.color-b, input[type=range]:not([disabled]).active.color-b {
+  box-shadow: 0px 0px 0px 1px var(--color-b) inset; }
+
+input[type=range].color-b::-webkit-slider-thumb {
+  background-color: var(--color-b); }
+
+.fill.color-b {
+  fill: var(--color-b); }
+
+.stroke.color-b {
+  stroke: var(--color-b); }
+
+button.color-b, .button.color-b {
+  border-color: var(--color-b); }
+
+button.color-b, .button.color-b {
+  color: var(--color-b); }
+
+.filled.color-b, button.filled.color-b, .button.filled.color-b {
+  background: var(--color-b); }
+
+.filled.color-b, button.filled.color-b, .button.filled.color-b {
+  color: var(--bg); }
+
+.filled .fill.color-b, button.filled .fill.color-b, .button.filled .fill.color-b {
+  fill: var(--bg); }
+
+.filled .stroke.color-b, button.filled .stroke.color-b, .button.filled .stroke.color-b {
+  stroke: var(--bg); }
+
+.filled:after.color-b, .filled:before.color-b, button.filled:after.color-b, button.filled:before.color-b, .button.filled:after.color-b, .button.filled:before.color-b {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).color-b, a:active .bg.color-b, a.active:not(.unclickable):not(.disabled).color-b, a.active .bg.color-b, a:focus:not(.unclickable):not(.disabled).color-b, a:focus .bg.color-b, button:active:not(.unclickable):not(.disabled).color-b, button:active .bg.color-b, button.active:not(.unclickable):not(.disabled).color-b, button.active .bg.color-b, button:focus:not(.unclickable):not(.disabled).color-b, button:focus .bg.color-b, .button:active:not(.unclickable):not(.disabled).color-b, .button:active .bg.color-b, .button.active:not(.unclickable):not(.disabled).color-b, .button.active .bg.color-b, .button:focus:not(.unclickable):not(.disabled).color-b, .button:focus .bg.color-b {
+  background: var(--color-b); }
+
+a:active:not(.unclickable):not(.disabled).color-b, a:active .bg.color-b, a.active:not(.unclickable):not(.disabled).color-b, a.active .bg.color-b, a:focus:not(.unclickable):not(.disabled).color-b, a:focus .bg.color-b, button:active:not(.unclickable):not(.disabled).color-b, button:active .bg.color-b, button.active:not(.unclickable):not(.disabled).color-b, button.active .bg.color-b, button:focus:not(.unclickable):not(.disabled).color-b, button:focus .bg.color-b, .button:active:not(.unclickable):not(.disabled).color-b, .button:active .bg.color-b, .button.active:not(.unclickable):not(.disabled).color-b, .button.active .bg.color-b, .button:focus:not(.unclickable):not(.disabled).color-b, .button:focus .bg.color-b {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.color-b, a:active .bg .fill.color-b, a.active:not(.unclickable):not(.disabled) .fill.color-b, a.active .bg .fill.color-b, a:focus:not(.unclickable):not(.disabled) .fill.color-b, a:focus .bg .fill.color-b, button:active:not(.unclickable):not(.disabled) .fill.color-b, button:active .bg .fill.color-b, button.active:not(.unclickable):not(.disabled) .fill.color-b, button.active .bg .fill.color-b, button:focus:not(.unclickable):not(.disabled) .fill.color-b, button:focus .bg .fill.color-b, .button:active:not(.unclickable):not(.disabled) .fill.color-b, .button:active .bg .fill.color-b, .button.active:not(.unclickable):not(.disabled) .fill.color-b, .button.active .bg .fill.color-b, .button:focus:not(.unclickable):not(.disabled) .fill.color-b, .button:focus .bg .fill.color-b {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.color-b, a:active .bg .stroke.color-b, a.active:not(.unclickable):not(.disabled) .stroke.color-b, a.active .bg .stroke.color-b, a:focus:not(.unclickable):not(.disabled) .stroke.color-b, a:focus .bg .stroke.color-b, button:active:not(.unclickable):not(.disabled) .stroke.color-b, button:active .bg .stroke.color-b, button.active:not(.unclickable):not(.disabled) .stroke.color-b, button.active .bg .stroke.color-b, button:focus:not(.unclickable):not(.disabled) .stroke.color-b, button:focus .bg .stroke.color-b, .button:active:not(.unclickable):not(.disabled) .stroke.color-b, .button:active .bg .stroke.color-b, .button.active:not(.unclickable):not(.disabled) .stroke.color-b, .button.active .bg .stroke.color-b, .button:focus:not(.unclickable):not(.disabled) .stroke.color-b, .button:focus .bg .stroke.color-b {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.color-b, a:active:not(.unclickable):not(.disabled):before.color-b, a:active .bg:after.color-b, a:active .bg:before.color-b, a.active:not(.unclickable):not(.disabled):after.color-b, a.active:not(.unclickable):not(.disabled):before.color-b, a.active .bg:after.color-b, a.active .bg:before.color-b, a:focus:not(.unclickable):not(.disabled):after.color-b, a:focus:not(.unclickable):not(.disabled):before.color-b, a:focus .bg:after.color-b, a:focus .bg:before.color-b, button:active:not(.unclickable):not(.disabled):after.color-b, button:active:not(.unclickable):not(.disabled):before.color-b, button:active .bg:after.color-b, button:active .bg:before.color-b, button.active:not(.unclickable):not(.disabled):after.color-b, button.active:not(.unclickable):not(.disabled):before.color-b, button.active .bg:after.color-b, button.active .bg:before.color-b, button:focus:not(.unclickable):not(.disabled):after.color-b, button:focus:not(.unclickable):not(.disabled):before.color-b, button:focus .bg:after.color-b, button:focus .bg:before.color-b, .button:active:not(.unclickable):not(.disabled):after.color-b, .button:active:not(.unclickable):not(.disabled):before.color-b, .button:active .bg:after.color-b, .button:active .bg:before.color-b, .button.active:not(.unclickable):not(.disabled):after.color-b, .button.active:not(.unclickable):not(.disabled):before.color-b, .button.active .bg:after.color-b, .button.active .bg:before.color-b, .button:focus:not(.unclickable):not(.disabled):after.color-b, .button:focus:not(.unclickable):not(.disabled):before.color-b, .button:focus .bg:after.color-b, .button:focus .bg:before.color-b {
+  border-color: var(--bg); }
+
+a.color-b, button.color-b, .button.color-b {
+  color: var(--color-b); }
+
+a.color-b, button.color-b, .button.color-b {
+  border-color: var(--color-b); }
+
+.color-c {
+  color: var(--color-c); }
+
+.color-c {
+  border-color: var(--color-c); }
+
+* .color-c {
+  border-color: var(--color-c); }
+
+h1.color-c {
+  color: var(--color-c); }
+
+input.color-c, input[type=range].color-c {
+  color: var(--color-c); }
+
+ input[type=text]:focus.color-c, input[type=number]:focus.color-c, input[type=email]:focus.color-c {
+  box-shadow: 0px 0px 0px 1px var(--color-c) inset; }
+
+input[type=range]:not([disabled]):active.color-c, input[type=range]:not([disabled]).active.color-c {
+  box-shadow: 0px 0px 0px 1px var(--color-c) inset; }
+
+input[type=range].color-c::-webkit-slider-thumb {
+  background-color: var(--color-c); }
+
+.fill.color-c {
+  fill: var(--color-c); }
+
+.stroke.color-c {
+  stroke: var(--color-c); }
+
+button.color-c, .button.color-c {
+  border-color: var(--color-c); }
+
+button.color-c, .button.color-c {
+  color: var(--color-c); }
+
+.filled.color-c, button.filled.color-c, .button.filled.color-c {
+  background: var(--color-c); }
+
+.filled.color-c, button.filled.color-c, .button.filled.color-c {
+  color: var(--bg); }
+
+.filled .fill.color-c, button.filled .fill.color-c, .button.filled .fill.color-c {
+  fill: var(--bg); }
+
+.filled .stroke.color-c, button.filled .stroke.color-c, .button.filled .stroke.color-c {
+  stroke: var(--bg); }
+
+.filled:after.color-c, .filled:before.color-c, button.filled:after.color-c, button.filled:before.color-c, .button.filled:after.color-c, .button.filled:before.color-c {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).color-c, a:active .bg.color-c, a.active:not(.unclickable):not(.disabled).color-c, a.active .bg.color-c, a:focus:not(.unclickable):not(.disabled).color-c, a:focus .bg.color-c, button:active:not(.unclickable):not(.disabled).color-c, button:active .bg.color-c, button.active:not(.unclickable):not(.disabled).color-c, button.active .bg.color-c, button:focus:not(.unclickable):not(.disabled).color-c, button:focus .bg.color-c, .button:active:not(.unclickable):not(.disabled).color-c, .button:active .bg.color-c, .button.active:not(.unclickable):not(.disabled).color-c, .button.active .bg.color-c, .button:focus:not(.unclickable):not(.disabled).color-c, .button:focus .bg.color-c {
+  background: var(--color-c); }
+
+a:active:not(.unclickable):not(.disabled).color-c, a:active .bg.color-c, a.active:not(.unclickable):not(.disabled).color-c, a.active .bg.color-c, a:focus:not(.unclickable):not(.disabled).color-c, a:focus .bg.color-c, button:active:not(.unclickable):not(.disabled).color-c, button:active .bg.color-c, button.active:not(.unclickable):not(.disabled).color-c, button.active .bg.color-c, button:focus:not(.unclickable):not(.disabled).color-c, button:focus .bg.color-c, .button:active:not(.unclickable):not(.disabled).color-c, .button:active .bg.color-c, .button.active:not(.unclickable):not(.disabled).color-c, .button.active .bg.color-c, .button:focus:not(.unclickable):not(.disabled).color-c, .button:focus .bg.color-c {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.color-c, a:active .bg .fill.color-c, a.active:not(.unclickable):not(.disabled) .fill.color-c, a.active .bg .fill.color-c, a:focus:not(.unclickable):not(.disabled) .fill.color-c, a:focus .bg .fill.color-c, button:active:not(.unclickable):not(.disabled) .fill.color-c, button:active .bg .fill.color-c, button.active:not(.unclickable):not(.disabled) .fill.color-c, button.active .bg .fill.color-c, button:focus:not(.unclickable):not(.disabled) .fill.color-c, button:focus .bg .fill.color-c, .button:active:not(.unclickable):not(.disabled) .fill.color-c, .button:active .bg .fill.color-c, .button.active:not(.unclickable):not(.disabled) .fill.color-c, .button.active .bg .fill.color-c, .button:focus:not(.unclickable):not(.disabled) .fill.color-c, .button:focus .bg .fill.color-c {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.color-c, a:active .bg .stroke.color-c, a.active:not(.unclickable):not(.disabled) .stroke.color-c, a.active .bg .stroke.color-c, a:focus:not(.unclickable):not(.disabled) .stroke.color-c, a:focus .bg .stroke.color-c, button:active:not(.unclickable):not(.disabled) .stroke.color-c, button:active .bg .stroke.color-c, button.active:not(.unclickable):not(.disabled) .stroke.color-c, button.active .bg .stroke.color-c, button:focus:not(.unclickable):not(.disabled) .stroke.color-c, button:focus .bg .stroke.color-c, .button:active:not(.unclickable):not(.disabled) .stroke.color-c, .button:active .bg .stroke.color-c, .button.active:not(.unclickable):not(.disabled) .stroke.color-c, .button.active .bg .stroke.color-c, .button:focus:not(.unclickable):not(.disabled) .stroke.color-c, .button:focus .bg .stroke.color-c {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.color-c, a:active:not(.unclickable):not(.disabled):before.color-c, a:active .bg:after.color-c, a:active .bg:before.color-c, a.active:not(.unclickable):not(.disabled):after.color-c, a.active:not(.unclickable):not(.disabled):before.color-c, a.active .bg:after.color-c, a.active .bg:before.color-c, a:focus:not(.unclickable):not(.disabled):after.color-c, a:focus:not(.unclickable):not(.disabled):before.color-c, a:focus .bg:after.color-c, a:focus .bg:before.color-c, button:active:not(.unclickable):not(.disabled):after.color-c, button:active:not(.unclickable):not(.disabled):before.color-c, button:active .bg:after.color-c, button:active .bg:before.color-c, button.active:not(.unclickable):not(.disabled):after.color-c, button.active:not(.unclickable):not(.disabled):before.color-c, button.active .bg:after.color-c, button.active .bg:before.color-c, button:focus:not(.unclickable):not(.disabled):after.color-c, button:focus:not(.unclickable):not(.disabled):before.color-c, button:focus .bg:after.color-c, button:focus .bg:before.color-c, .button:active:not(.unclickable):not(.disabled):after.color-c, .button:active:not(.unclickable):not(.disabled):before.color-c, .button:active .bg:after.color-c, .button:active .bg:before.color-c, .button.active:not(.unclickable):not(.disabled):after.color-c, .button.active:not(.unclickable):not(.disabled):before.color-c, .button.active .bg:after.color-c, .button.active .bg:before.color-c, .button:focus:not(.unclickable):not(.disabled):after.color-c, .button:focus:not(.unclickable):not(.disabled):before.color-c, .button:focus .bg:after.color-c, .button:focus .bg:before.color-c {
+  border-color: var(--bg); }
+
+a.color-c, button.color-c, .button.color-c {
+  color: var(--color-c); }
+
+a.color-c, button.color-c, .button.color-c {
+  border-color: var(--color-c); }
+
+.color-d {
+  color: var(--color-d); }
+
+.color-d {
+  border-color: var(--color-d); }
+
+* .color-d {
+  border-color: var(--color-d); }
+
+h1.color-d {
+  color: var(--color-d); }
+
+input.color-d, input[type=range].color-d {
+  color: var(--color-d); }
+
+ input[type=text]:focus.color-d, input[type=number]:focus.color-d, input[type=email]:focus.color-d {
+  box-shadow: 0px 0px 0px 1px var(--color-d) inset; }
+
+input[type=range]:not([disabled]):active.color-d, input[type=range]:not([disabled]).active.color-d {
+  box-shadow: 0px 0px 0px 1px var(--color-d) inset; }
+
+input[type=range].color-d::-webkit-slider-thumb {
+  background-color: var(--color-d); }
+
+.fill.color-d {
+  fill: var(--color-d); }
+
+.stroke.color-d {
+  stroke: var(--color-d); }
+
+button.color-d, .button.color-d {
+  border-color: var(--color-d); }
+
+button.color-d, .button.color-d {
+  color: var(--color-d); }
+
+.filled.color-d, button.filled.color-d, .button.filled.color-d {
+  background: var(--color-d); }
+
+.filled.color-d, button.filled.color-d, .button.filled.color-d {
+  color: var(--bg); }
+
+.filled .fill.color-d, button.filled .fill.color-d, .button.filled .fill.color-d {
+  fill: var(--bg); }
+
+.filled .stroke.color-d, button.filled .stroke.color-d, .button.filled .stroke.color-d {
+  stroke: var(--bg); }
+
+.filled:after.color-d, .filled:before.color-d, button.filled:after.color-d, button.filled:before.color-d, .button.filled:after.color-d, .button.filled:before.color-d {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).color-d, a:active .bg.color-d, a.active:not(.unclickable):not(.disabled).color-d, a.active .bg.color-d, a:focus:not(.unclickable):not(.disabled).color-d, a:focus .bg.color-d, button:active:not(.unclickable):not(.disabled).color-d, button:active .bg.color-d, button.active:not(.unclickable):not(.disabled).color-d, button.active .bg.color-d, button:focus:not(.unclickable):not(.disabled).color-d, button:focus .bg.color-d, .button:active:not(.unclickable):not(.disabled).color-d, .button:active .bg.color-d, .button.active:not(.unclickable):not(.disabled).color-d, .button.active .bg.color-d, .button:focus:not(.unclickable):not(.disabled).color-d, .button:focus .bg.color-d {
+  background: var(--color-d); }
+
+a:active:not(.unclickable):not(.disabled).color-d, a:active .bg.color-d, a.active:not(.unclickable):not(.disabled).color-d, a.active .bg.color-d, a:focus:not(.unclickable):not(.disabled).color-d, a:focus .bg.color-d, button:active:not(.unclickable):not(.disabled).color-d, button:active .bg.color-d, button.active:not(.unclickable):not(.disabled).color-d, button.active .bg.color-d, button:focus:not(.unclickable):not(.disabled).color-d, button:focus .bg.color-d, .button:active:not(.unclickable):not(.disabled).color-d, .button:active .bg.color-d, .button.active:not(.unclickable):not(.disabled).color-d, .button.active .bg.color-d, .button:focus:not(.unclickable):not(.disabled).color-d, .button:focus .bg.color-d {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.color-d, a:active .bg .fill.color-d, a.active:not(.unclickable):not(.disabled) .fill.color-d, a.active .bg .fill.color-d, a:focus:not(.unclickable):not(.disabled) .fill.color-d, a:focus .bg .fill.color-d, button:active:not(.unclickable):not(.disabled) .fill.color-d, button:active .bg .fill.color-d, button.active:not(.unclickable):not(.disabled) .fill.color-d, button.active .bg .fill.color-d, button:focus:not(.unclickable):not(.disabled) .fill.color-d, button:focus .bg .fill.color-d, .button:active:not(.unclickable):not(.disabled) .fill.color-d, .button:active .bg .fill.color-d, .button.active:not(.unclickable):not(.disabled) .fill.color-d, .button.active .bg .fill.color-d, .button:focus:not(.unclickable):not(.disabled) .fill.color-d, .button:focus .bg .fill.color-d {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.color-d, a:active .bg .stroke.color-d, a.active:not(.unclickable):not(.disabled) .stroke.color-d, a.active .bg .stroke.color-d, a:focus:not(.unclickable):not(.disabled) .stroke.color-d, a:focus .bg .stroke.color-d, button:active:not(.unclickable):not(.disabled) .stroke.color-d, button:active .bg .stroke.color-d, button.active:not(.unclickable):not(.disabled) .stroke.color-d, button.active .bg .stroke.color-d, button:focus:not(.unclickable):not(.disabled) .stroke.color-d, button:focus .bg .stroke.color-d, .button:active:not(.unclickable):not(.disabled) .stroke.color-d, .button:active .bg .stroke.color-d, .button.active:not(.unclickable):not(.disabled) .stroke.color-d, .button.active .bg .stroke.color-d, .button:focus:not(.unclickable):not(.disabled) .stroke.color-d, .button:focus .bg .stroke.color-d {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.color-d, a:active:not(.unclickable):not(.disabled):before.color-d, a:active .bg:after.color-d, a:active .bg:before.color-d, a.active:not(.unclickable):not(.disabled):after.color-d, a.active:not(.unclickable):not(.disabled):before.color-d, a.active .bg:after.color-d, a.active .bg:before.color-d, a:focus:not(.unclickable):not(.disabled):after.color-d, a:focus:not(.unclickable):not(.disabled):before.color-d, a:focus .bg:after.color-d, a:focus .bg:before.color-d, button:active:not(.unclickable):not(.disabled):after.color-d, button:active:not(.unclickable):not(.disabled):before.color-d, button:active .bg:after.color-d, button:active .bg:before.color-d, button.active:not(.unclickable):not(.disabled):after.color-d, button.active:not(.unclickable):not(.disabled):before.color-d, button.active .bg:after.color-d, button.active .bg:before.color-d, button:focus:not(.unclickable):not(.disabled):after.color-d, button:focus:not(.unclickable):not(.disabled):before.color-d, button:focus .bg:after.color-d, button:focus .bg:before.color-d, .button:active:not(.unclickable):not(.disabled):after.color-d, .button:active:not(.unclickable):not(.disabled):before.color-d, .button:active .bg:after.color-d, .button:active .bg:before.color-d, .button.active:not(.unclickable):not(.disabled):after.color-d, .button.active:not(.unclickable):not(.disabled):before.color-d, .button.active .bg:after.color-d, .button.active .bg:before.color-d, .button:focus:not(.unclickable):not(.disabled):after.color-d, .button:focus:not(.unclickable):not(.disabled):before.color-d, .button:focus .bg:after.color-d, .button:focus .bg:before.color-d {
+  border-color: var(--bg); }
+
+a.color-d, button.color-d, .button.color-d {
+  color: var(--color-d); }
+
+a.color-d, button.color-d, .button.color-d {
+  border-color: var(--color-d); }
+
+.color-e {
+  color: var(--color-e); }
+
+.color-e {
+  border-color: var(--color-e); }
+
+* .color-e {
+  border-color: var(--color-e); }
+
+h1.color-e {
+  color: var(--color-e); }
+
+input.color-e, input[type=range].color-e {
+  color: var(--color-e); }
+
+ input[type=text]:focus.color-e, input[type=number]:focus.color-e, input[type=email]:focus.color-e {
+  box-shadow: 0px 0px 0px 1px var(--color-e) inset; }
+
+input[type=range]:not([disabled]):active.color-e, input[type=range]:not([disabled]).active.color-e {
+  box-shadow: 0px 0px 0px 1px var(--color-e) inset; }
+
+input[type=range].color-e::-webkit-slider-thumb {
+  background-color: var(--color-e); }
+
+.fill.color-e {
+  fill: var(--color-e); }
+
+.stroke.color-e {
+  stroke: var(--color-e); }
+
+button.color-e, .button.color-e {
+  border-color: var(--color-e); }
+
+button.color-e, .button.color-e {
+  color: var(--color-e); }
+
+.filled.color-e, button.filled.color-e, .button.filled.color-e {
+  background: var(--color-e); }
+
+.filled.color-e, button.filled.color-e, .button.filled.color-e {
+  color: var(--bg); }
+
+.filled .fill.color-e, button.filled .fill.color-e, .button.filled .fill.color-e {
+  fill: var(--bg); }
+
+.filled .stroke.color-e, button.filled .stroke.color-e, .button.filled .stroke.color-e {
+  stroke: var(--bg); }
+
+.filled:after.color-e, .filled:before.color-e, button.filled:after.color-e, button.filled:before.color-e, .button.filled:after.color-e, .button.filled:before.color-e {
+  border-color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled).color-e, a:active .bg.color-e, a.active:not(.unclickable):not(.disabled).color-e, a.active .bg.color-e, a:focus:not(.unclickable):not(.disabled).color-e, a:focus .bg.color-e, button:active:not(.unclickable):not(.disabled).color-e, button:active .bg.color-e, button.active:not(.unclickable):not(.disabled).color-e, button.active .bg.color-e, button:focus:not(.unclickable):not(.disabled).color-e, button:focus .bg.color-e, .button:active:not(.unclickable):not(.disabled).color-e, .button:active .bg.color-e, .button.active:not(.unclickable):not(.disabled).color-e, .button.active .bg.color-e, .button:focus:not(.unclickable):not(.disabled).color-e, .button:focus .bg.color-e {
+  background: var(--color-e); }
+
+a:active:not(.unclickable):not(.disabled).color-e, a:active .bg.color-e, a.active:not(.unclickable):not(.disabled).color-e, a.active .bg.color-e, a:focus:not(.unclickable):not(.disabled).color-e, a:focus .bg.color-e, button:active:not(.unclickable):not(.disabled).color-e, button:active .bg.color-e, button.active:not(.unclickable):not(.disabled).color-e, button.active .bg.color-e, button:focus:not(.unclickable):not(.disabled).color-e, button:focus .bg.color-e, .button:active:not(.unclickable):not(.disabled).color-e, .button:active .bg.color-e, .button.active:not(.unclickable):not(.disabled).color-e, .button.active .bg.color-e, .button:focus:not(.unclickable):not(.disabled).color-e, .button:focus .bg.color-e {
+  color: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .fill.color-e, a:active .bg .fill.color-e, a.active:not(.unclickable):not(.disabled) .fill.color-e, a.active .bg .fill.color-e, a:focus:not(.unclickable):not(.disabled) .fill.color-e, a:focus .bg .fill.color-e, button:active:not(.unclickable):not(.disabled) .fill.color-e, button:active .bg .fill.color-e, button.active:not(.unclickable):not(.disabled) .fill.color-e, button.active .bg .fill.color-e, button:focus:not(.unclickable):not(.disabled) .fill.color-e, button:focus .bg .fill.color-e, .button:active:not(.unclickable):not(.disabled) .fill.color-e, .button:active .bg .fill.color-e, .button.active:not(.unclickable):not(.disabled) .fill.color-e, .button.active .bg .fill.color-e, .button:focus:not(.unclickable):not(.disabled) .fill.color-e, .button:focus .bg .fill.color-e {
+  fill: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled) .stroke.color-e, a:active .bg .stroke.color-e, a.active:not(.unclickable):not(.disabled) .stroke.color-e, a.active .bg .stroke.color-e, a:focus:not(.unclickable):not(.disabled) .stroke.color-e, a:focus .bg .stroke.color-e, button:active:not(.unclickable):not(.disabled) .stroke.color-e, button:active .bg .stroke.color-e, button.active:not(.unclickable):not(.disabled) .stroke.color-e, button.active .bg .stroke.color-e, button:focus:not(.unclickable):not(.disabled) .stroke.color-e, button:focus .bg .stroke.color-e, .button:active:not(.unclickable):not(.disabled) .stroke.color-e, .button:active .bg .stroke.color-e, .button.active:not(.unclickable):not(.disabled) .stroke.color-e, .button.active .bg .stroke.color-e, .button:focus:not(.unclickable):not(.disabled) .stroke.color-e, .button:focus .bg .stroke.color-e {
+  stroke: var(--bg); }
+
+a:active:not(.unclickable):not(.disabled):after.color-e, a:active:not(.unclickable):not(.disabled):before.color-e, a:active .bg:after.color-e, a:active .bg:before.color-e, a.active:not(.unclickable):not(.disabled):after.color-e, a.active:not(.unclickable):not(.disabled):before.color-e, a.active .bg:after.color-e, a.active .bg:before.color-e, a:focus:not(.unclickable):not(.disabled):after.color-e, a:focus:not(.unclickable):not(.disabled):before.color-e, a:focus .bg:after.color-e, a:focus .bg:before.color-e, button:active:not(.unclickable):not(.disabled):after.color-e, button:active:not(.unclickable):not(.disabled):before.color-e, button:active .bg:after.color-e, button:active .bg:before.color-e, button.active:not(.unclickable):not(.disabled):after.color-e, button.active:not(.unclickable):not(.disabled):before.color-e, button.active .bg:after.color-e, button.active .bg:before.color-e, button:focus:not(.unclickable):not(.disabled):after.color-e, button:focus:not(.unclickable):not(.disabled):before.color-e, button:focus .bg:after.color-e, button:focus .bg:before.color-e, .button:active:not(.unclickable):not(.disabled):after.color-e, .button:active:not(.unclickable):not(.disabled):before.color-e, .button:active .bg:after.color-e, .button:active .bg:before.color-e, .button.active:not(.unclickable):not(.disabled):after.color-e, .button.active:not(.unclickable):not(.disabled):before.color-e, .button.active .bg:after.color-e, .button.active .bg:before.color-e, .button:focus:not(.unclickable):not(.disabled):after.color-e, .button:focus:not(.unclickable):not(.disabled):before.color-e, .button:focus .bg:after.color-e, .button:focus .bg:before.color-e {
+  border-color: var(--bg); }
+
+a.color-e, button.color-e, .button.color-e {
+  color: var(--color-e); }
+
+a.color-e, button.color-e, .button.color-e {
+  border-color: var(--color-e); }
+
+@media screen and (max-width: 767px) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    padding-bottom: 70px !important; } }
+
+ .abs {
+  position: absolute; }
+
+ .rel {
+  position: relative; }
+
+.inline-block {
+  display: inline-block; }
+
+.block {
+  display: block; }
+
+.flex {
+  display: flex; }
+
+.column {
+  flex-direction: column; }
+
+.row {
+  flex-direction: row; }
+
+.grow {
+  flex-grow: 1; }
+
+.no-grow {
+  flex-grow: 0; }
+
+.no-basis {
+  flex-basis: 0; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+ .strong {
+  font-weight: bold; }
+
+.normal {
+  font-weight: normal; }
+
+.light {
+  font-weight: light; }
+
+.text-center {
+  text-align: center; }
+
+.pointer {
+  cursor: pointer; }
+
+.visible {
+  opacity: 1; }
+
+.invisible, .hidden {
+  opacity: 0; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.margin-auto {
+  margin: auto auto; }
+
+.fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.row-space-between-center {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.row-space-between-flex-start {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row; }
+
+.row-flex-end-center {
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row; }
+
+.column-center-center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.column-flex-start-flex-start {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column; }
+
+.column-stretch-flex-end {
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: column; }
+
+.column-stretch-flex-start {
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column; }
+
+*[class*="column"] > .x-flex-start {
+  align-self: flex-start; }
+
+.p0 {
+  padding: 0em; }
+
+.mt0 {
+  margin-top: 0em; }
+
+.m0 {
+  margin: 0em; }
+
+.h-auto {
+  height: auto; }
+
+.pb0-1 {
+  padding-bottom: 0.1em; }
+
+.w1em {
+  width: 1em; }
+
+.h1em {
+  height: 1em; }
+
+.radius1px {
+  border-radius: 1px; }
+
+.cmr0-2 > * {
+  margin-right: 0.2em; }
+
+.w2em {
+  width: 2em; }
+
+.maxw2em {
+  max-width: 2em; }
+
+.pt0-3 {
+  padding-top: 0.3em; }
+
+.maxw3em {
+  max-width: 3em; }
+
+.pt0-5 {
+  padding-top: 0.5em; }
+
+.plr0-5 {
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+
+.ptb0-5 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.cmt0-5 > * {
+  margin-top: 0.5em; }
+
+.mr0-5 {
+  margin-right: 0.5em; }
+
+.cmb0-5 > * {
+  margin-bottom: 0.5em; }
+
+.plr1 {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.p1 {
+  padding: 1em; }
+
+.mb1 {
+  margin-bottom: 1em; }
+
+.cmb1 > * {
+  margin-bottom: 1em; }
+
+.mlr1 {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.mtb1 {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.w10em {
+  width: 10em; }
+
+.minw10em {
+  min-width: 10em; }
+
+.minw12em {
+  min-width: 12em; }
+
+.mb2 {
+  margin-bottom: 2em; }
+
+.mtb2 {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.bb2-solid {
+  border-bottom-width: 2px;
+  border-bottom-style: solid; }
+
+.minw20em {
+  min-width: 20em; }
+
+.basis24em {
+  flex-basis: 24em; }
+
+.maxw26em {
+  max-width: 26em; }
+
+.maxw40em {
+  max-width: 40em; }
+
+.p5 {
+  padding: 5em; }
+
+.maxw50pc {
+  max-width: 50%; }
+
+.maxw70pc {
+  max-width: 70%; }
+
+.w100pc {
+  width: 100%; }
+
+.w100vw {
+  width: 100vw; }
+
+.h100pc {
+  height: 100%; }
+
+.h100vh {
+  height: 100vh; }
+
+.maxw100vw {
+  max-width: 100vw; }
+
+.f1 {
+  font-size: var(--f1);
+  line-height: var(--line-height); }
+  .f1 input, .f1 button {
+    font-size: var(--f1);
+    line-height: var(--line-height); }
+
+.f2 {
+  font-size: var(--f2);
+  line-height: var(--line-height); }
+  .f2 input, .f2 button {
+    font-size: var(--f2);
+    line-height: var(--line-height); }
+
+ h1, .h1 {
+  font-size: var(--f5);
+  line-height: var(--line-height); }
+   h1 input, h1 button, .h1 input, .h1 button {
+    font-size: var(--f5);
+    line-height: var(--line-height); }
+
+.container {
+  max-width: 100%; }
+
+@media only screen and (max-width: 576px) {
+  .sm-max-100 {
+    width: 100%;
+    min-width: 100%; }
+  .sm-max-column {
+    flex-direction: column !important; }
+  .sm-max-none {
+    display: none !important; } }
+
+@media only screen and (min-width: 768px) {
+  .md-container {
+    max-width: var(--container); } }
+@keyframes scroll {
+  from {
+    background-position: 0px 0px; }
+  to {
+    background-position: 0px 100; } }
+
+html, body {
+  letter-spacing: 0.05em;
+  overflow: hidden; }
+  html *, body * {
+    -webkit-tap-highlight-color: transparent; }
+  html .gridify, body .gridify {
+    display: grid;
+    column-count: 4;
+    column-gap: 10px; }
+    html .gridify > *, body .gridify > * {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      break-inside: avoid; }
+      html .gridify > * >, body .gridify > * > {
+        grid-row: 1 / -1;
+        grid-column: 1; }
+  html a:active img, html a:active canvas, html a:active video, html a:focus img, html a:focus canvas, html a:focus video, body a:active img, body a:active canvas, body a:active video, body a:focus img, body a:focus canvas, body a:focus video {
+    filter: invert(1) hue-rotate(180deg); }
+  html #events .link .media, body #events .link .media {
+    width: auto; }
+    html #events .link .media img, html #events .link .media canvas, body #events .link .media img, body #events .link .media canvas {
+      width: auto;
+      height: 100%; }
+  html .post-media-link, body .post-media-link {
+    cursor: initial; }
+    html .post-media-link.link, body .post-media-link.link {
+      cursor: pointer; }
+    html .post-media-link:active, body .post-media-link:active {
+      background: transparent !important; }
+  @media only screen and (max-width: 576px) {
+    html #nowt, body #nowt {
+      border-bottom: 1px solid var(--color);
+      margin-bottom: 1em; }
+    html #footer, html #footer *, body #footer, body #footer * {
+      flex-direction: column !important; }
+    html #feed-nav label, body #feed-nav label {
+      min-width: 5.5em; }
+    html #works-nav label, body #works-nav label {
+      min-width: 50%; }
+    html .post-media, html .homepage-media, html .about-media, html .feed-item-media, body .post-media, body .homepage-media, body .about-media, body .feed-item-media {
+      margin-left: -1em;
+      margin-right: -1em; } }
+  @media only screen and (min-width: 576px) {
+    html #nowt, body #nowt {
+      margin-bottom: -1em; } }
+  @media only screen and (min-width: 768px) {
+    html #feed .post-orientation-portrait .post-text, html #feed .post-orientation-portrait .media, body #feed .post-orientation-portrait .post-text, body #feed .post-orientation-portrait .media {
+      margin: 0em 12em; }
+    html #subscribe-page, body #subscribe-page {
+      margin: 0em 19em; } }
+  html big, body big {
+    font-size: 5vw;
+    line-height: var(--line-height); }
+    @media only screen and (min-width: 768px) {
+      html big, body big {
+        font-size: var(--f4);
+        line-height: var(--line-height); }
+        html big input, html big textarea, html big button, html big select, body big input, body big textarea, body big button, body big select {
+          font-size: var(--f4);
+          line-height: var(--line-height); } }
+  html .dot, body .dot {
+    border: 1px solid var(--color);
+    margin-right: 0.5em;
+    margin-bottom: 0.05em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.5em;
+    display: inline-block; }
+  html .border, body .border {
+    border-width: var(--borders);
+    border-style: solid; }
+  html .bb, body .bb {
+    border-bottom-width: var(--borders);
+    border-bottom-style: solid; }
+  html .bt, body .bt {
+    border-top-width: var(--borders);
+    border-top-style: solid; }
+  html .br, body .br {
+    border-right-width: var(--borders);
+    border-right-style: solid; }
+  html .bl, body .bl {
+    border-left-width: var(--borders);
+    border-left-style: solid; }
+  html p, html ul, html blockquote, body p, body ul, body blockquote {
+    margin-bottom: 1em; }
+  html #autr svg path, body #autr svg path {
+    stroke-width: 1px;
+    fill: transparent;
+    fill: var(--color);
+    display: none; }
+    html #autr svg path:nth-child(3), body #autr svg path:nth-child(3) {
+      display: block; }
+  html .overlaid .overlay, body .overlaid .overlay {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6; }
+  @media only screen and (min-width: 576px) {
+    html .overlaid .overlay.hoverable, body .overlaid .overlay.hoverable {
+      display: none; } }
+  html .overlaid.hoverable:hover .overlay, body .overlaid.hoverable:hover .overlay {
+    display: flex; }
+  html .ico-1 #autr svg path, body .ico-1 #autr svg path {
+    display: none; }
+  html .ico-1 #autr svg path:nth-child(1), body .ico-1 #autr svg path:nth-child(1) {
+    display: block; }
+  html .ico-2 #autr svg path, body .ico-2 #autr svg path {
+    display: none; }
+  html .ico-2 #autr svg path:nth-child(2), body .ico-2 #autr svg path:nth-child(2) {
+    display: block; }
+  html .ico-3 #autr svg path, body .ico-3 #autr svg path {
+    display: none; }
+  html .ico-3 #autr svg path:nth-child(3), body .ico-3 #autr svg path:nth-child(3) {
+    display: block; }
+  html .ico-4 #autr svg path, body .ico-4 #autr svg path {
+    display: none; }
+  html .ico-4 #autr svg path:nth-child(4), body .ico-4 #autr svg path:nth-child(4) {
+    display: block; }
+  html .ico-5 #autr svg path, body .ico-5 #autr svg path {
+    display: none; }
+  html .ico-5 #autr svg path:nth-child(5), body .ico-5 #autr svg path:nth-child(5) {
+    display: block; }
+  html .ico-6 #autr svg path, body .ico-6 #autr svg path {
+    display: none; }
+  html .ico-6 #autr svg path:nth-child(6), body .ico-6 #autr svg path:nth-child(6) {
+    display: block; }
+  html .ico-7 #autr svg path, body .ico-7 #autr svg path {
+    display: none; }
+  html .ico-7 #autr svg path:nth-child(7), body .ico-7 #autr svg path:nth-child(7) {
+    display: block; }
+  html .ico-8 #autr svg path, body .ico-8 #autr svg path {
+    display: none; }
+  html .ico-8 #autr svg path:nth-child(8), body .ico-8 #autr svg path:nth-child(8) {
+    display: block; }
+  html .ico-9 #autr svg path, body .ico-9 #autr svg path {
+    display: none; }
+  html .ico-9 #autr svg path:nth-child(9), body .ico-9 #autr svg path:nth-child(9) {
+    display: block; }
+  html .ico-10 #autr svg path, body .ico-10 #autr svg path {
+    display: none; }
+  html .ico-10 #autr svg path:nth-child(10), body .ico-10 #autr svg path:nth-child(10) {
+    display: block; }
+  html p a, body p a {
+    border-bottom-width: 2px;
+    border-bottom-style: undefined; }
+  html svg path, body svg path {
+    fill: var(--color); }
+  html .media, body .media {
+    line-height: 0px !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important; }
+    html .media:after, body .media:after {
+      content: "...";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      font-size: 32px;
+      z-index: 1;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    html .media > *, body .media > * {
+      z-index: 2; }
+    html .media *, html .media img, body .media *, body .media img {
+      line-height: 0px !important;
+      font-size: 0px !important; }
+    html .media .vimeo iframe, body .media .vimeo iframe {
+      width: 100%;
+      height: 100%;
+      z-index: 77;
+      position: absolute; }

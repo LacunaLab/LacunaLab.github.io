@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title><![CDATA[Lacuna Lab | Latest events]]></title>
+		<description><![CDATA[Lacuna Lab is a creative association and collaborative arts space in Kreuzberg, Berlin]]></description>
+		<link>https://lacunalab.org</link>
+		<atom:link href="https://autr.tv/rss.xml" rel="self" type="application/rss+xml" />
+		<generator>https://github.com/lacunalab</generator>
+		<lastBuildDate>Mon, 14 Jun 2021 23:20:04 GMT</lastBuildDate>
+		
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun Nov 01 2020]]></description>
+					<link>https://lacunalab.org/events/spaced-out-in-outer-space</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/spaced-out-in-outer-space</guid>
+					<pubDate>Sat, 31 Oct 2020 23:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Mar 27 2020]]></description>
+					<link>https://lacunalab.org/events/workshop-av-signal-processing-and-vga-hacking-wolfgang-spahn</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/workshop-av-signal-processing-and-vga-hacking-wolfgang-spahn</guid>
+					<pubDate>Fri, 27 Mar 2020 10:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Jan 31 2020]]></description>
+					<link>https://lacunalab.org/events/fire-is-the-air-the-poet-breathes</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/fire-is-the-air-the-poet-breathes</guid>
+					<pubDate>Fri, 31 Jan 2020 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Thu Dec 05 2019]]></description>
+					<link>https://lacunalab.org/events/video-circuits-berlin-003</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/video-circuits-berlin-003</guid>
+					<pubDate>Thu, 05 Dec 2019 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat Nov 16 2019]]></description>
+					<link>https://lacunalab.org/events/workshop-introduction-to-blender-28</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/workshop-introduction-to-blender-28</guid>
+					<pubDate>Sat, 16 Nov 2019 10:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Oct 18 2019]]></description>
+					<link>https://lacunalab.org/events/a-vital-piece-of-information-fragments-of-a-greater-context</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/a-vital-piece-of-information-fragments-of-a-greater-context</guid>
+					<pubDate>Fri, 18 Oct 2019 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Oct 11 2019]]></description>
+					<link>https://lacunalab.org/events/blender-3d-meetup</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/blender-3d-meetup</guid>
+					<pubDate>Fri, 11 Oct 2019 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun Jul 14 2019]]></description>
+					<link>https://lacunalab.org/events/arts-and-hypnosis-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/arts-and-hypnosis-workshop</guid>
+					<pubDate>Sun, 14 Jul 2019 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat May 18 2019]]></description>
+					<link>https://lacunalab.org/events/video-circuits-002</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/video-circuits-002</guid>
+					<pubDate>Sat, 18 May 2019 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Mon Mar 18 2019]]></description>
+					<link>https://lacunalab.org/events/video-circuits-berlin-001</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/video-circuits-berlin-001</guid>
+					<pubDate>Mon, 18 Mar 2019 17:30:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat Mar 16 2019]]></description>
+					<link>https://lacunalab.org/events/experiencing-the-world-of-persian-calligraphy</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/experiencing-the-world-of-persian-calligraphy</guid>
+					<pubDate>Sat, 16 Mar 2019 10:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Thu Jan 03 2019]]></description>
+					<link>https://lacunalab.org/events/vorspiel-codescapes-fully-automated-luxury-orbital-resonance</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/vorspiel-codescapes-fully-automated-luxury-orbital-resonance</guid>
+					<pubDate>Thu, 03 Jan 2019 18:30:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Sep 28 2018]]></description>
+					<link>https://lacunalab.org/events/davide-prati-algorithmic-botany-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/davide-prati-algorithmic-botany-workshop</guid>
+					<pubDate>Fri, 28 Sep 2018 08:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Jul 27 2018]]></description>
+					<link>https://lacunalab.org/events/lacuna-lab-x3</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/lacuna-lab-x3</guid>
+					<pubDate>Fri, 27 Jul 2018 09:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat Apr 14 2018]]></description>
+					<link>https://lacunalab.org/events/in-the-mood-for-shaders-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/in-the-mood-for-shaders-workshop</guid>
+					<pubDate>Sat, 14 Apr 2018 09:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Mar 09 2018]]></description>
+					<link>https://lacunalab.org/events/science-salon-003-community-science-night</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/science-salon-003-community-science-night</guid>
+					<pubDate>Fri, 09 Mar 2018 18:30:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun Jul 09 2017]]></description>
+					<link>https://lacunalab.org/events/science-salon-002-artist-talk-karolina-sobecka</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/science-salon-002-artist-talk-karolina-sobecka</guid>
+					<pubDate>Sun, 09 Jul 2017 16:30:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun Jun 04 2017]]></description>
+					<link>https://lacunalab.org/events/gestural-instruments-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/gestural-instruments-workshop</guid>
+					<pubDate>Sun, 04 Jun 2017 11:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Wed May 10 2017]]></description>
+					<link>https://lacunalab.org/events/retune-studio-visit</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/retune-studio-visit</guid>
+					<pubDate>Wed, 10 May 2017 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun May 07 2017]]></description>
+					<link>https://lacunalab.org/events/science-salon-001</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/science-salon-001</guid>
+					<pubDate>Sun, 07 May 2017 16:30:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Mar 10 2017]]></description>
+					<link>https://lacunalab.org/events/openframeworks-meetup-march-2017</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/openframeworks-meetup-march-2017</guid>
+					<pubDate>Fri, 10 Mar 2017 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Feb 10 2017]]></description>
+					<link>https://lacunalab.org/events/serious-sparkles-an-inquiry-into-artificial-stupidity</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/serious-sparkles-an-inquiry-into-artificial-stupidity</guid>
+					<pubDate>Fri, 10 Feb 2017 12:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Mon Jan 16 2017]]></description>
+					<link>https://lacunalab.org/events/art-grant-writing-seminar-and-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/art-grant-writing-seminar-and-workshop</guid>
+					<pubDate>Mon, 16 Jan 2017 12:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Apr 22 2016]]></description>
+					<link>https://lacunalab.org/events/lacuna-lab-activation-exhibition</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/lacuna-lab-activation-exhibition</guid>
+					<pubDate>Fri, 22 Apr 2016 11:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Thu Dec 17 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-10-soylent-statt-lebkuchen</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-10-soylent-statt-lebkuchen</guid>
+					<pubDate>Thu, 17 Dec 2015 19:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Fri Dec 04 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-9-with-julia-reder</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-9-with-julia-reder</guid>
+					<pubDate>Fri, 04 Dec 2015 19:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Tue Nov 17 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-8</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-8</guid>
+					<pubDate>Tue, 17 Nov 2015 19:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat Oct 17 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-7</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-7</guid>
+					<pubDate>Sat, 17 Oct 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sun Oct 04 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-6-with-talk-warum-wir-schon-immer-cyborgs-waren-und-was-das-fur-konsequenzen-haben-konnte</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-6-with-talk-warum-wir-schon-immer-cyborgs-waren-und-was-das-fur-konsequenzen-haben-konnte</guid>
+					<pubDate>Sun, 04 Oct 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Mon Aug 17 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-5</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-5</guid>
+					<pubDate>Mon, 17 Aug 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Tue Aug 04 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-4</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-4</guid>
+					<pubDate>Tue, 04 Aug 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Tue Jul 07 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-3</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-3</guid>
+					<pubDate>Tue, 07 Jul 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Sat Jul 04 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-2</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-2</guid>
+					<pubDate>Sat, 04 Jul 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Thu Jun 18 2015]]></description>
+					<link>https://lacunalab.org/events/non-human-subjectivities</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/non-human-subjectivities</guid>
+					<pubDate>Thu, 18 Jun 2015 17:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Wed Jun 17 2015]]></description>
+					<link>https://lacunalab.org/events/plugnplay-meeting-1</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-1</guid>
+					<pubDate>Wed, 17 Jun 2015 18:00:00 GMT</pubDate>
+				</item>
+			
+	</channel>
+</rss>
+
+	
