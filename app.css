@@ -56520,13 +56520,13 @@ html, body {
   html .profile-alumni .media, html .profile-residency .media, body .profile-alumni .media, body .profile-residency .media {
     display: none; }
   html .profile-community.profile-dark .media, html .profile-organisation.profile-dark .media, body .profile-community.profile-dark .media, body .profile-organisation.profile-dark .media {
-    filter: invert(0); }
+    filter: invert(0) grayscale(100%); }
   html .profile-community.profile-light .media, html .profile-organisation.profile-light .media, body .profile-community.profile-light .media, body .profile-organisation.profile-light .media {
-    filter: invert(1); }
+    filter: invert(1) grayscale(100%); }
   html .profile-community.profile-dark:focus .media, html .profile-community.profile-dark:active .media, html .profile-organisation.profile-dark:focus .media, html .profile-organisation.profile-dark:active .media, body .profile-community.profile-dark:focus .media, body .profile-community.profile-dark:active .media, body .profile-organisation.profile-dark:focus .media, body .profile-organisation.profile-dark:active .media {
-    filter: invert(1); }
+    filter: invert(1) grayscale(100%); }
   html .profile-community.profile-light:focus .media, html .profile-community.profile-light:active .media, html .profile-organisation.profile-light:focus .media, html .profile-organisation.profile-light:active .media, body .profile-community.profile-light:focus .media, body .profile-community.profile-light:active .media, body .profile-organisation.profile-light:focus .media, body .profile-organisation.profile-light:active .media {
-    filter: invert(0); }
+    filter: invert(0) grayscale(100%); }
   html .profile-community .media-wrapper, html .profile-organisation .media-wrapper, body .profile-community .media-wrapper, body .profile-organisation .media-wrapper {
     padding: 1em;
     padding-bottom: 4em; }
