@@ -125,7 +125,7 @@ table {
   border-radius: 0px;
   font-weight: normal; }
 
-textarea, input[type=text], input[type=password], input[type=number], input[type=email], select, .dropdown {
+textarea, input[type=text], input[type=password], input[type=number], input[type=email], input[type=date], input[type=datetime-local], select, .dropdown {
   padding: var(--input-padding);
   flex-basis: 0; }
 
@@ -56517,6 +56517,17 @@ html, body {
       cursor: pointer; }
     html .post-media-link:active, body .post-media-link:active {
       background: transparent !important; }
+  html .profile-alumni .media, html .profile-residency .media, body .profile-alumni .media, body .profile-residency .media {
+    display: none; }
+  html .profile-community.profile-dark .media-wrapper, html .profile-organisation.profile-dark .media-wrapper, body .profile-community.profile-dark .media-wrapper, body .profile-organisation.profile-dark .media-wrapper {
+    filter: invert(0); }
+  html .profile-community .media-wrapper, html .profile-organisation .media-wrapper, body .profile-community .media-wrapper, body .profile-organisation .media-wrapper {
+    padding: 1em;
+    padding-bottom: 4em;
+    filter: invert(1);
+    mix-blend-mode: difference; }
+  html .profile-community .media, html .profile-organisation .media, body .profile-community .media, body .profile-organisation .media {
+    background-color: transparent !important; }
   @media only screen and (max-width: 576px) {
     html #nowt, body #nowt {
       border-bottom: 1px solid var(--color);
@@ -56644,7 +56655,6 @@ html, body {
     border: none !important;
     box-shadow: none !important; }
     html .media:after, body .media:after {
-      content: "...";
       display: block;
       position: absolute;
       width: 100%;
