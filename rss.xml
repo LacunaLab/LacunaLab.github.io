@@ -8,7 +8,7 @@
 		<link>https://lacunalab.org</link>
 		<atom:link href="https://autr.tv/rss.xml" rel="self" type="application/rss+xml" />
 		<generator>https://github.com/lacunalab</generator>
-		<lastBuildDate>Wed, 16 Jun 2021 13:15:49 GMT</lastBuildDate>
+		<lastBuildDate>Wed, 16 Jun 2021 17:36:51 GMT</lastBuildDate>
 		
 				<item>
 					<title><![CDATA[undefined]]></title>
@@ -232,6 +232,15 @@
 					<link>https://lacunalab.org/events/plugnplay-meeting-10-soylent-statt-lebkuchen</link>
 					<guid isPermaLink="false">https://lacunalab.org/events/plugnplay-meeting-10-soylent-statt-lebkuchen</guid>
 					<pubDate>Thu, 17 Dec 2015 19:00:00 GMT</pubDate>
+				</item>
+			
+
+				<item>
+					<title><![CDATA[undefined]]></title>
+					<description><![CDATA[Mon Dec 14 2015]]></description>
+					<link>https://lacunalab.org/events/deepweb-workshop</link>
+					<guid isPermaLink="false">https://lacunalab.org/events/deepweb-workshop</guid>
+					<pubDate>Mon, 14 Dec 2015 10:00:00 GMT</pubDate>
 				</item>
 			
 

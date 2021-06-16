@@ -55,7 +55,7 @@
   --bg-c: hsl( 300, 20%, 20% );
   --bg-d: hsl( 300, 20%, 25% );
   --bg-e: hsl( 300, 20%, 30% );
-  --color-a: hsl( 160, 90%, 65% );
+  --color-a: hsl( 160, 85%, 60% );
   --color-b: hsl( 200, 90%, 65% );
   --color-c: hsl( 0, 90%, 65% );
   --color-d: hsl( 240, 90%, 65% );
@@ -56519,12 +56519,18 @@ html, body {
       background: transparent !important; }
   html .profile-alumni .media, html .profile-residency .media, body .profile-alumni .media, body .profile-residency .media {
     display: none; }
-  html .profile-community.profile-dark .media-wrapper, html .profile-organisation.profile-dark .media-wrapper, body .profile-community.profile-dark .media-wrapper, body .profile-organisation.profile-dark .media-wrapper {
+  html .profile-community.profile-dark .media, html .profile-organisation.profile-dark .media, body .profile-community.profile-dark .media, body .profile-organisation.profile-dark .media {
+    filter: invert(0); }
+  html .profile-community.profile-light .media, html .profile-organisation.profile-light .media, body .profile-community.profile-light .media, body .profile-organisation.profile-light .media {
+    filter: invert(1); }
+  html .profile-community.profile-dark:focus .media, html .profile-community.profile-dark:active .media, html .profile-organisation.profile-dark:focus .media, html .profile-organisation.profile-dark:active .media, body .profile-community.profile-dark:focus .media, body .profile-community.profile-dark:active .media, body .profile-organisation.profile-dark:focus .media, body .profile-organisation.profile-dark:active .media {
+    filter: invert(1); }
+  html .profile-community.profile-light:focus .media, html .profile-community.profile-light:active .media, html .profile-organisation.profile-light:focus .media, html .profile-organisation.profile-light:active .media, body .profile-community.profile-light:focus .media, body .profile-community.profile-light:active .media, body .profile-organisation.profile-light:focus .media, body .profile-organisation.profile-light:active .media {
     filter: invert(0); }
   html .profile-community .media-wrapper, html .profile-organisation .media-wrapper, body .profile-community .media-wrapper, body .profile-organisation .media-wrapper {
     padding: 1em;
-    padding-bottom: 4em;
-    filter: invert(1);
+    padding-bottom: 4em; }
+  html .profile-community .media, html .profile-organisation .media, body .profile-community .media, body .profile-organisation .media {
     mix-blend-mode: difference; }
   html .profile-community .media, html .profile-organisation .media, body .profile-community .media, body .profile-organisation .media {
     background-color: transparent !important; }
